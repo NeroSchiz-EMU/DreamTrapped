@@ -159,7 +159,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215688, g: 0.4745098, b: 0.46999687, a: 0}
+  m_BackGroundColor: {r: 0.68235296, g: 0.8901961, b: 1, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -339,7 +339,7 @@ Transform:
   m_GameObject: {fileID: 799613287}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.92, y: -4.76, z: 0}
+  m_LocalPosition: {x: 12.92, y: -4.62, z: 0}
   m_LocalScale: {x: 1.760444, y: 5.6465, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -451,75 +451,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1001 &1618665733
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -2253911629886400664, guid: 96c996255f4e7430a87b364f603e89f0, type: 3}
-      propertyPath: m_Name
-      value: concepts
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: 96c996255f4e7430a87b364f603e89f0, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 7.3981657
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: 96c996255f4e7430a87b364f603e89f0, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 7.3981657
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: 96c996255f4e7430a87b364f603e89f0, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 7.3981657
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: 96c996255f4e7430a87b364f603e89f0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0541
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: 96c996255f4e7430a87b364f603e89f0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -8.0142
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: 96c996255f4e7430a87b364f603e89f0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: 96c996255f4e7430a87b364f603e89f0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: 96c996255f4e7430a87b364f603e89f0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: 96c996255f4e7430a87b364f603e89f0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: 96c996255f4e7430a87b364f603e89f0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: 96c996255f4e7430a87b364f603e89f0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: 96c996255f4e7430a87b364f603e89f0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: 96c996255f4e7430a87b364f603e89f0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: -8435245712485981826, guid: 96c996255f4e7430a87b364f603e89f0, type: 3}
 --- !u!1 &1911538300
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,7 +511,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.10217814, g: 0.2924528, b: 0.07863118, a: 1}
+  m_Color: {r: 0.827451, g: 0.43137255, b: 0.69803923, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -759,9 +690,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c109f0c593d0ab04a82dafe0a05eebe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
+  moveSpeed: 9
   jumpForce: 12
-  dashSpeed: 15
+  dashSpeed: 16
   dashDuration: 0.4
   dashTime: 0
   groundCheckDistance: 1.4
@@ -776,4 +707,3 @@ SceneRoots:
   - {fileID: 1911538302}
   - {fileID: 799613290}
   - {fileID: 2080808697}
-  - {fileID: 1618665733}
