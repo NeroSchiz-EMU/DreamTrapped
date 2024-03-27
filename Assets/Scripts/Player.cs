@@ -16,24 +16,33 @@ public class Player : MonoBehaviour
     [SerializeField] private float dashDuration;
     [SerializeField] private float dashTime;
 
-
     private float xInput;
 
     private int facingDir = 1;
     private bool facingRight = true;
 
-    [Header("Collision info")]
+    [Header("Collision Info")]
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask whatIsGround;
     private bool isGrounded;
-    
-    
+
+    [Header("Item Progression")]
+    [SerializeField] private bool hasSword;
+    [SerializeField] private bool hasBoots;
+    [SerializeField] private bool hasGun;
+    [SerializeField] private bool hasDash;
+
+    [Header("Health Info")]
+    [SerializeField] private float maxHealth = 100f;
+    [SerializeField] private float health = 0;
+
     //****************************************************************************
     // Start is called before the first frame update
     void Start()    
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
+
     }
     
     //****************************************************************************
@@ -116,6 +125,37 @@ public class Player : MonoBehaviour
     {
         Gizmos.DrawLine(transform.position, new Vector3(transform.position.x, transform.position.y - groundCheckDistance));
     }
+
+    //****************************************************************************
+    //Get functions
+
+    public float getMaxHealth()
+    {
+        return maxHealth;
+    }
+    public float getHealth()
+    {
+        return health;
+    }
+
+    //Inventory progression
+    public bool getHasSword()
+    {
+        return hasSword;
+    }
+    public bool getHasBoots()
+    {
+        return hasBoots;
+    }
+    public bool getHasGun()
+    {
+        return hasGun;
+    }
+    public bool getHasDash()
+    {
+        return hasDash;
+    }
+
 }
 
 
