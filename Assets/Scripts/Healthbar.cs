@@ -19,5 +19,6 @@ public class Healthbar : MonoBehaviour
     void Update()
     {
         healthBarFill.fillAmount = player.getHealth() / player.getMaxHealth();
+        //Optimize this later so it only runs when player is damaged
     }
 }

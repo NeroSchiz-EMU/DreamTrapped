@@ -10,12 +10,16 @@ public class Player : MonoBehaviour
     
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce;
+    [SerializeField] private float coyoteTime = 0.1f;
+    private float coyoteTimeCounter;
+    [SerializeField] private float jumpBufferTime = 0.2f;
+    private float jumpBufferCounter;
 
     [Header("Dash Info")] 
     [SerializeField] private float dashSpeed;
     [SerializeField] private float dashDuration;
     [SerializeField] private float dashTime;
-
+    
     private float xInput;
 
     private int facingDir = 1;
@@ -52,15 +56,36 @@ public class Player : MonoBehaviour
         Movement();
         CheckInput();
         CollisionChecks();
+        FlipController();
+        AnimatorControllers();
 
+        //Dashing
         dashTime = dashTime - Time.deltaTime;
         if (Input.GetKeyDown((KeyCode.LeftShift)))
         {
             dashTime = dashDuration;
         }
+
+        //Jump buffer
+        if (Input.GetButtonDown("Jump"))
+        {
+            jumpBufferCounter = jumpBufferTime;
+        }
+        else
+        {
+            jumpBufferCounter -= Time.deltaTime;
+        }
+
+        //Coyote Time
+        if (isGrounded)
+        {
+            coyoteTimeCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
+        }
         
-        FlipController();
-        AnimatorControllers();
     }
 
     private void CollisionChecks()
@@ -72,9 +97,18 @@ public class Player : MonoBehaviour
     {
         xInput = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        //Jumping (dynamic height)
+        if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f)
         {
-            Jump();
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+
+            jumpBufferCounter = 0f;
+        }
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+
+            coyoteTimeCounter = 0f;
         }
     }
 
@@ -88,12 +122,6 @@ public class Player : MonoBehaviour
         {
             rb.velocity = new Vector2(xInput * moveSpeed, rb.velocity.y);
         }
-    }
-
-    private void Jump()
-    {
-        if (isGrounded)
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
     }
 
     private void AnimatorControllers()

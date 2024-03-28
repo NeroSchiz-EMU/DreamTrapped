@@ -1,0 +1,1031 @@
+fileFormatVersion: 2
+guid: 42759b09416d44f778d98b210612c2bf
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638471670394424200
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Dreamer_Frame_0
+    originalName: 
+    pivot: {x: 0.52777773, y: -0.2972973}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 131
+      width: 18
+      height: 37
+    spriteID: 437d75bbc24b642e885731a0724ac8d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 131}
+  - name: Dreamer_Frame_1
+    originalName: 
+    pivot: {x: 0.52777773, y: -0.2972973}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 176
+      width: 18
+      height: 37
+    spriteID: 2911fa067546e4280bd04e2f4568e29e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 176}
+  - name: Dreamer_Frame_2
+    originalName: 
+    pivot: {x: 0.52777773, y: -0.2972973}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 98
+      y: 4
+      width: 18
+      height: 37
+    spriteID: 3b9dce84da2cb402f80cc4534fb44588
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 98, y: 4}
+  - name: Dreamer_Frame_3
+    originalName: 
+    pivot: {x: 0.52777773, y: -0.2972973}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 98
+      y: 49
+      width: 18
+      height: 37
+    spriteID: 4462940fe0f2f46a4843f86c10d1f5ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 98, y: 49}
+  - name: Dreamer_Frame_4
+    originalName: 
+    pivot: {x: 0.52777773, y: -0.2972973}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 98
+      y: 94
+      width: 18
+      height: 37
+    spriteID: 5d5d7f03817fe470f81e4c7f47e6fee4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 98, y: 94}
+  - name: Dreamer_Frame_5
+    originalName: 
+    pivot: {x: 0.52777773, y: -0.2972973}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 98
+      y: 139
+      width: 18
+      height: 37
+    spriteID: f90c7085289434cf08bdadd94bd1cfb9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 98, y: 139}
+  - name: Dreamer_Frame_6
+    originalName: 
+    pivot: {x: 0.52777773, y: -0.30555555}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 133
+      width: 18
+      height: 36
+    spriteID: 4c091d749cec14eb6a8410c398426568
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 133}
+  - name: Dreamer_Frame_7
+    originalName: 
+    pivot: {x: 0.52777773, y: -0.30555555}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 177
+      width: 18
+      height: 36
+    spriteID: 6cd292205c76a4d26b11f34a547b48d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 177}
+  - name: Dreamer_Frame_8
+    originalName: 
+    pivot: {x: 0.52777773, y: -0.30555555}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 49
+      width: 18
+      height: 36
+    spriteID: c82cfdcf4391746aa9af53349134f258
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 49}
+  - name: Dreamer_Frame_9
+    originalName: 
+    pivot: {x: 0.52777773, y: -0.30555555}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 93
+      width: 18
+      height: 36
+    spriteID: 3deeffeb5a58044828900da259913a09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 93}
+  - name: Dreamer_Frame_10
+    originalName: 
+    pivot: {x: 0.52777773, y: -0.30555555}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 137
+      width: 18
+      height: 36
+    spriteID: 5bf55aafed80047d8bf05e1c7bb44188
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 137}
+  - name: Dreamer_Frame_11
+    originalName: 
+    pivot: {x: 0.52777773, y: -0.30555555}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 181
+      width: 18
+      height: 36
+    spriteID: abddc949c6eac43edba691787b42b85e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 181}
+  - name: Dreamer_Frame_12
+    originalName: 
+    pivot: {x: 0.52777773, y: -0.2972973}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 98
+      y: 184
+      width: 18
+      height: 37
+    spriteID: 434defde49c24471ab5fa83e1bc48ace
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 98, y: 184}
+  - name: Dreamer_Frame_13
+    originalName: 
+    pivot: {x: 0.52777773, y: -0.2972973}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 4
+      width: 18
+      height: 37
+    spriteID: 5cfb752d9e48f4739864d57bd271fa0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 4}
+  - name: Dreamer_Frame_14
+    originalName: 
+    pivot: {x: 0.6458334, y: -0.2631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 200
+      width: 24
+      height: 38
+    spriteID: b259106bb4ee94bf2a442ad7b8cd3308
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 200}
+  - name: Dreamer_Frame_15
+    originalName: 
+    pivot: {x: 0.6458334, y: -0.24390244}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 24
+      height: 41
+    spriteID: b67be1dd5b7dc4274939b05e95d657f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Dreamer_Frame_16
+    originalName: 
+    pivot: {x: 0.6458334, y: -0.2631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 4
+      width: 24
+      height: 38
+    spriteID: a9792c73cca3a4ac982e737f8d822596
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 4}
+  - name: Dreamer_Frame_17
+    originalName: 
+    pivot: {x: 0.6458334, y: -0.24390244}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 53
+      width: 24
+      height: 41
+    spriteID: 8d82e6b499b2a436a962127c630db610
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 53}
+  - name: Dreamer_Frame_18
+    originalName: 
+    pivot: {x: 0.6458334, y: -0.2631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 50
+      width: 24
+      height: 38
+    spriteID: 4eaf3643ceba24223ba95e305eeadb8c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 50}
+  - name: Dreamer_Frame_19
+    originalName: 
+    pivot: {x: 0.6458334, y: -0.24390244}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 102
+      width: 24
+      height: 41
+    spriteID: eddc572c8a94b431691b5493b181c3f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 102}
+  - name: Dreamer_Frame_20
+    originalName: 
+    pivot: {x: 0.6458334, y: -0.2631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 96
+      width: 24
+      height: 38
+    spriteID: 74ba239a67c0e45c4b0f7988292fd062
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 96}
+  - name: Dreamer_Frame_21
+    originalName: 
+    pivot: {x: 0.6458334, y: -0.24390244}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 151
+      width: 24
+      height: 41
+    spriteID: 8f92a99fbd5914484bd435898d7ed774
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 151}
+  - name: Dreamer_Frame_22
+    originalName: 
+    pivot: {x: 0.55263156, y: -0.31428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 4
+      width: 19
+      height: 35
+    spriteID: d153a3591375d41dcaf80d2d3cdc378b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 4}
+  - name: Dreamer_Frame_23
+    originalName: 
+    pivot: {x: 0.57500005, y: -0.31428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 46
+      width: 20
+      height: 35
+    spriteID: 839086a3002f842a1bfde1c6e7ed2f7f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 46}
+  - name: Dreamer_Frame_24
+    originalName: 
+    pivot: {x: 0.57500005, y: -0.32352942}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 89
+      width: 20
+      height: 34
+    spriteID: 59c0239970e0a40a294b825b4aa4f796
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 89}
+  - name: Dreamer_Frame_25
+    originalName: 
+    pivot: {x: 0.5227273, y: -0.3529412}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 185
+      width: 22
+      height: 34
+    spriteID: 87bd789b9eea74c42b35a2f6418e37f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 185}
+  - name: Dreamer_Frame_26
+    originalName: 
+    pivot: {x: 0.55263156, y: -0.31428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 47
+      width: 19
+      height: 35
+    spriteID: 3c6b5e895bb2b4ea3992f57203adcb3f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 47}
+  - name: Dreamer_Frame_27
+    originalName: 
+    pivot: {x: 0.6136364, y: -0.31428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 142
+      width: 22
+      height: 35
+    spriteID: 7c06c4165cb044af5a2351c575159da2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 142}
+  - name: Dreamer_Frame_28
+    originalName: 
+    pivot: {x: 0.6136364, y: -0.32352942}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 4
+      width: 22
+      height: 34
+    spriteID: 35429f1b3536a41d7a2edd00babc5123
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 4}
+  - name: Dreamer_Frame_29
+    originalName: 
+    pivot: {x: 0.55263156, y: -0.31428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 90
+      width: 19
+      height: 35
+    spriteID: 03561786054d94933acf7bbfd6a93171
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 90}
+  - name: Dreamer_Frame_30
+    originalName: 
+    pivot: {x: 0.55263156, y: -0.32352942}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 177
+      y: 4
+      width: 19
+      height: 34
+    spriteID: 20034523633c044988fc12205fd78925
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 177, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -125637774
+    name: Dreamer
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Dreamer_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 13
+        y: 11
+        width: 18
+        height: 37
+      spriteId: 437d75bbc24b642e885731a0724ac8d4
+    - name: Dreamer_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 13
+        y: 11
+        width: 18
+        height: 37
+      spriteId: 2911fa067546e4280bd04e2f4568e29e
+    - name: Dreamer_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 13
+        y: 11
+        width: 18
+        height: 37
+      spriteId: 3b9dce84da2cb402f80cc4534fb44588
+    - name: Dreamer_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 13
+        y: 11
+        width: 18
+        height: 37
+      spriteId: 4462940fe0f2f46a4843f86c10d1f5ce
+    - name: Dreamer_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 13
+        y: 11
+        width: 18
+        height: 37
+      spriteId: 5d5d7f03817fe470f81e4c7f47e6fee4
+    - name: Dreamer_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 13
+        y: 11
+        width: 18
+        height: 37
+      spriteId: f90c7085289434cf08bdadd94bd1cfb9
+    - name: Dreamer_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 13
+        y: 11
+        width: 18
+        height: 36
+      spriteId: 4c091d749cec14eb6a8410c398426568
+    - name: Dreamer_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 13
+        y: 11
+        width: 18
+        height: 36
+      spriteId: 6cd292205c76a4d26b11f34a547b48d0
+    - name: Dreamer_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 13
+        y: 11
+        width: 18
+        height: 36
+      spriteId: c82cfdcf4391746aa9af53349134f258
+    - name: Dreamer_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 13
+        y: 11
+        width: 18
+        height: 36
+      spriteId: 3deeffeb5a58044828900da259913a09
+    - name: Dreamer_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 13
+        y: 11
+        width: 18
+        height: 36
+      spriteId: 5bf55aafed80047d8bf05e1c7bb44188
+    - name: Dreamer_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 13
+        y: 11
+        width: 18
+        height: 36
+      spriteId: abddc949c6eac43edba691787b42b85e
+    - name: Dreamer_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 13
+        y: 11
+        width: 18
+        height: 37
+      spriteId: 434defde49c24471ab5fa83e1bc48ace
+    - name: Dreamer_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 13
+        y: 11
+        width: 18
+        height: 37
+      spriteId: 5cfb752d9e48f4739864d57bd271fa0e
+    - name: Dreamer_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 7
+        y: 10
+        width: 24
+        height: 38
+      spriteId: b259106bb4ee94bf2a442ad7b8cd3308
+    - name: Dreamer_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 7
+        y: 10
+        width: 24
+        height: 41
+      spriteId: b67be1dd5b7dc4274939b05e95d657f4
+    - name: Dreamer_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 7
+        y: 10
+        width: 24
+        height: 38
+      spriteId: a9792c73cca3a4ac982e737f8d822596
+    - name: Dreamer_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 7
+        y: 10
+        width: 24
+        height: 41
+      spriteId: 8d82e6b499b2a436a962127c630db610
+    - name: Dreamer_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 7
+        y: 10
+        width: 24
+        height: 38
+      spriteId: 4eaf3643ceba24223ba95e305eeadb8c
+    - name: Dreamer_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 7
+        y: 10
+        width: 24
+        height: 41
+      spriteId: eddc572c8a94b431691b5493b181c3f7
+    - name: Dreamer_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 7
+        y: 10
+        width: 24
+        height: 38
+      spriteId: 74ba239a67c0e45c4b0f7988292fd062
+    - name: Dreamer_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 7
+        y: 10
+        width: 24
+        height: 41
+      spriteId: 8f92a99fbd5914484bd435898d7ed774
+    - name: Dreamer_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 12
+        y: 11
+        width: 19
+        height: 35
+      spriteId: d153a3591375d41dcaf80d2d3cdc378b
+    - name: Dreamer_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 11
+        y: 11
+        width: 20
+        height: 35
+      spriteId: 839086a3002f842a1bfde1c6e7ed2f7f
+    - name: Dreamer_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 11
+        y: 11
+        width: 20
+        height: 34
+      spriteId: 59c0239970e0a40a294b825b4aa4f796
+    - name: Dreamer_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 11
+        y: 12
+        width: 22
+        height: 34
+      spriteId: 87bd789b9eea74c42b35a2f6418e37f0
+    - name: Dreamer_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 12
+        y: 11
+        width: 19
+        height: 35
+      spriteId: 3c6b5e895bb2b4ea3992f57203adcb3f
+    - name: Dreamer_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 9
+        y: 11
+        width: 22
+        height: 35
+      spriteId: 7c06c4165cb044af5a2351c575159da2
+    - name: Dreamer_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 9
+        y: 11
+        width: 22
+        height: 34
+      spriteId: 35429f1b3536a41d7a2edd00babc5123
+    - name: Dreamer_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 12
+        y: 11
+        width: 19
+        height: 35
+      spriteId: 03561786054d94933acf7bbfd6a93171
+    - name: Dreamer_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 12
+        y: 11
+        width: 19
+        height: 34
+      spriteId: 20034523633c044988fc12205fd78925
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 45, y: 60}
