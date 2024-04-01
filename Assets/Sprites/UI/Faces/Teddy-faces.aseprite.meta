@@ -1,0 +1,739 @@
+fileFormatVersion: 2
+guid: 0a63a196448cd4c66873d5502d3d9bfc
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 1
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 0
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 0
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638475866591326640
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Teddy-faces_Frame_0
+    originalName: 
+    pivot: {x: 0.52193594, y: 0.03978935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1436
+      height: 1709
+    spriteID: fef4afd22ea594dd48ab268a30538d31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -292, y: -51}
+  - name: Teddy-faces_Frame_1
+    originalName: 
+    pivot: {x: 0.52193594, y: 0.03978935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1721
+      width: 1436
+      height: 1709
+    spriteID: c54655c4adea6492d994aeee7e46704f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -292, y: 1666}
+  - name: Teddy-faces_Frame_2
+    originalName: 
+    pivot: {x: 0.52193594, y: 0.03978935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3438
+      width: 1436
+      height: 1709
+    spriteID: 39dde9293c067486aa7dac6435f438c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -292, y: 3383}
+  - name: Teddy-faces_Frame_3
+    originalName: 
+    pivot: {x: 0.52193594, y: 0.03978935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5155
+      width: 1436
+      height: 1709
+    spriteID: c0c2fdc23741e4aff90c74d0ced657e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -292, y: 5100}
+  - name: Teddy-faces_Frame_4
+    originalName: 
+    pivot: {x: 0.52193594, y: 0.03978935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1448
+      y: 4
+      width: 1436
+      height: 1709
+    spriteID: d88f25e0d1f20416ab98e3a6d4be017c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1152, y: -51}
+  - name: Teddy-faces_Frame_5
+    originalName: 
+    pivot: {x: 0.52193594, y: 0.03978935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1448
+      y: 1721
+      width: 1436
+      height: 1709
+    spriteID: 8b252e0ae856b4f0b9a71212ed5ff351
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1152, y: 1666}
+  - name: Teddy-faces_Frame_6
+    originalName: 
+    pivot: {x: 0.52193594, y: 0.03978935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1448
+      y: 3438
+      width: 1436
+      height: 1709
+    spriteID: 2784b57b1d66d43088590800cb70ff7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1152, y: 3383}
+  - name: Teddy-faces_Frame_7
+    originalName: 
+    pivot: {x: 0.52193594, y: 0.03978935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1448
+      y: 5155
+      width: 1436
+      height: 1709
+    spriteID: f248593332e324621acced59ce809862
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1152, y: 5100}
+  - name: Teddy-faces_Frame_8
+    originalName: 
+    pivot: {x: 0.52193594, y: 0.03978935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2892
+      y: 4
+      width: 1436
+      height: 1709
+    spriteID: 1412682d028c74cb1a04a4841431d69d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2596, y: -51}
+  - name: Teddy-faces_Frame_9
+    originalName: 
+    pivot: {x: 0.52193594, y: 0.03978935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2892
+      y: 1721
+      width: 1436
+      height: 1709
+    spriteID: 51b63c0cd9b584c35bfed7d9447fbdd8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2596, y: 1666}
+  - name: Teddy-faces_Frame_10
+    originalName: 
+    pivot: {x: 0.52193594, y: 0.03978935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2892
+      y: 3438
+      width: 1436
+      height: 1709
+    spriteID: 78c27f47a7bc44f9da03f9c34f42e1dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2596, y: 3383}
+  - name: Teddy-faces_Frame_11
+    originalName: 
+    pivot: {x: 0.52193594, y: 0.03978935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2892
+      y: 5155
+      width: 1436
+      height: 1709
+    spriteID: c3954b8db7f074cfa9c19b189787ce37
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2892, y: 5155}
+  spriteSheetImportData:
+  - name: Teddy-faces_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5152
+      width: 1440
+      height: 1712
+    spriteID: 8b64900e435af41909a1b9bab6ecef6e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Teddy-faces_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1448
+      y: 5152
+      width: 1440
+      height: 1712
+    spriteID: 546001fd66f2f454dba024441f486b95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Teddy-faces_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2892
+      y: 5152
+      width: 1440
+      height: 1712
+    spriteID: 85630afd69f224c46ad35a0252b8134c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Teddy-faces_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3436
+      width: 1440
+      height: 1712
+    spriteID: 9d042f26d729f46b3a30d1e1de3227d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Teddy-faces_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1448
+      y: 3436
+      width: 1440
+      height: 1712
+    spriteID: bf355c47846924fa5a26adca519b309c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Teddy-faces_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2892
+      y: 3436
+      width: 1440
+      height: 1712
+    spriteID: b5523ec30425f48a68000896804051b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Teddy-faces_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1720
+      width: 1440
+      height: 1712
+    spriteID: 21887e344b8ec40d68e81a83fefe3330
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Teddy-faces_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1448
+      y: 1720
+      width: 1440
+      height: 1712
+    spriteID: c729fc6335ae74c0587f1a4208b939a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Teddy-faces_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2892
+      y: 1720
+      width: 1440
+      height: 1712
+    spriteID: b361aa310ec07420892faa2bac8c69b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Teddy-faces_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1436
+      height: 1712
+    spriteID: 13d005524e0f1469682734d8fc8697c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Teddy-faces_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1448
+      y: 4
+      width: 1436
+      height: 1712
+    spriteID: e3d30e1700d5341edb82db7acf59aa27
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Teddy-faces_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2892
+      y: 4
+      width: 1436
+      height: 1712
+    spriteID: 852dfce15f7834b4a89d50bb13a8b8bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1218685505
+    name: Teddy-faces
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Teddy-faces_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 27
+        y: -123
+        width: 2091
+        height: 1934
+      spriteId: fef4afd22ea594dd48ab268a30538d31
+    - name: Teddy-faces_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 27
+        y: -123
+        width: 2091
+        height: 1934
+      spriteId: c54655c4adea6492d994aeee7e46704f
+    - name: Teddy-faces_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 27
+        y: -123
+        width: 2091
+        height: 1934
+      spriteId: 39dde9293c067486aa7dac6435f438c2
+    - name: Teddy-faces_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 27
+        y: -123
+        width: 2091
+        height: 1934
+      spriteId: c0c2fdc23741e4aff90c74d0ced657e3
+    - name: Teddy-faces_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 27
+        y: -123
+        width: 2091
+        height: 1934
+      spriteId: d88f25e0d1f20416ab98e3a6d4be017c
+    - name: Teddy-faces_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 27
+        y: -123
+        width: 2091
+        height: 1934
+      spriteId: 8b252e0ae856b4f0b9a71212ed5ff351
+    - name: Teddy-faces_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 27
+        y: -123
+        width: 2091
+        height: 1934
+      spriteId: 2784b57b1d66d43088590800cb70ff7c
+    - name: Teddy-faces_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 27
+        y: -123
+        width: 2091
+        height: 1934
+      spriteId: f248593332e324621acced59ce809862
+    - name: Teddy-faces_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 27
+        y: -123
+        width: 2091
+        height: 1934
+      spriteId: 1412682d028c74cb1a04a4841431d69d
+    - name: Teddy-faces_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 27
+        y: -123
+        width: 2091
+        height: 1934
+      spriteId: 51b63c0cd9b584c35bfed7d9447fbdd8
+    - name: Teddy-faces_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 27
+        y: -123
+        width: 2091
+        height: 1934
+      spriteId: 78c27f47a7bc44f9da03f9c34f42e1dc
+    - name: Teddy-faces_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 323
+        y: -68
+        width: 1436
+        height: 1709
+      spriteId: c3954b8db7f074cfa9c19b189787ce37
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 2145, y: 1999}
