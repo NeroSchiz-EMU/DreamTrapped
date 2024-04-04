@@ -3,10 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
+    
+    
     
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce;
@@ -14,12 +17,15 @@ public class Player : MonoBehaviour
     private float coyoteTimeCounter;
     [SerializeField] private float jumpBufferTime = 0.2f;
     private float jumpBufferCounter;
-
+	private int airJumpCounter = 0;
+	[SerializeField] private int maxAirJumps;
+	
+	
     [Header("Dash Info")] 
     [SerializeField] private float dashSpeed;
     [SerializeField] private float dashDuration;
     [SerializeField] private float dashTime;
-    
+   
     private float xInput;
 
     private int facingDir = 1;
@@ -75,6 +81,11 @@ public class Player : MonoBehaviour
         {
             jumpBufferCounter -= Time.deltaTime;
         }
+		//else if (!Grounded() && airJumpCounter < maxAirJumps && Input.GetButtonDown("Jump"))
+		//{
+		//	isGrounded = true;
+			
+		//}
 
         //Coyote Time
         if (isGrounded)
@@ -129,7 +140,6 @@ public class Player : MonoBehaviour
           bool isMoving = rb.velocity.x != 0;
                 
           anim.SetFloat("yVelocity", rb.velocity.y);
-          
           anim.SetBool("isMoving", isMoving);
           anim.SetBool("isGrounded", isGrounded);
     }
