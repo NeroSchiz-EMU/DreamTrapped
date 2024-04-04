@@ -1,0 +1,587 @@
+fileFormatVersion: 2
+guid: 571ddfce1718a45a1a01f441af2ac448
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: PencilBrawler_Frame_0
+    originalName: 
+    pivot: {x: 0.54545456, y: -0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 36
+      width: 33
+      height: 24
+    spriteID: cd38bb1bfa9d8464b8ad73de45db21bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 36}
+  - name: PencilBrawler_Frame_1
+    originalName: 
+    pivot: {x: 0.54545456, y: -0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 68
+      width: 33
+      height: 24
+    spriteID: 02ffbb9df02ae4808a5c23af87c258df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 68}
+  - name: PencilBrawler_Frame_2
+    originalName: 
+    pivot: {x: 0.54545456, y: -0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 100
+      width: 33
+      height: 24
+    spriteID: dc9c9e1b6e75049a6aecf5a8dac71b3f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 100}
+  - name: PencilBrawler_Frame_3
+    originalName: 
+    pivot: {x: 0.56, y: -0.24}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 68
+      width: 25
+      height: 25
+    spriteID: bd1b33a2a35f447c8b0aed0f7dd6870c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 68}
+  - name: PencilBrawler_Frame_4
+    originalName: 
+    pivot: {x: 0.56, y: -0.24}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 101
+      width: 25
+      height: 25
+    spriteID: 52efaf29021c94947896f5d1de0519eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 101}
+  - name: PencilBrawler_Frame_5
+    originalName: 
+    pivot: {x: 0.56, y: -0.24}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 134
+      width: 25
+      height: 25
+    spriteID: 3d8a43bc2a53e49e29b62db4a304e4d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 134}
+  - name: PencilBrawler_Frame_6
+    originalName: 
+    pivot: {x: 0.53125, y: -0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 132
+      width: 32
+      height: 24
+    spriteID: dd053f5e5d1ad44389024fa94cbf1f2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 132}
+  - name: PencilBrawler_Frame_7
+    originalName: 
+    pivot: {x: 0.53125, y: -0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 164
+      width: 32
+      height: 24
+    spriteID: 3f45aaacc663649e681e78209fb29b37
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 164}
+  - name: PencilBrawler_Frame_8
+    originalName: 
+    pivot: {x: 0.53125, y: -0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 196
+      width: 32
+      height: 24
+    spriteID: 8396b2695314f4ce9ab72080905e2770
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 196}
+  - name: PencilBrawler_Frame_9
+    originalName: 
+    pivot: {x: 0.56, y: -0.24}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 167
+      width: 25
+      height: 25
+    spriteID: 668325f0726104e4195fd8e39c790154
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 167}
+  - name: PencilBrawler_Frame_10
+    originalName: 
+    pivot: {x: 0.56, y: -0.24}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 200
+      width: 25
+      height: 25
+    spriteID: 591f2c0120bf942f8bc568c64f6a5454
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 200}
+  - name: PencilBrawler_Frame_11
+    originalName: 
+    pivot: {x: 0.56, y: -0.24}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 4
+      width: 25
+      height: 25
+    spriteID: 8bdff67ad1ff347a0b691e19d1ed6f14
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 4}
+  - name: PencilBrawler_Frame_12
+    originalName: 
+    pivot: {x: 0.56666666, y: -0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 4
+      width: 30
+      height: 24
+    spriteID: 2fd535a647aa647e6b4d0cd6935effa9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 4}
+  - name: PencilBrawler_Frame_13
+    originalName: 
+    pivot: {x: 0.53125, y: -0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 228
+      width: 32
+      height: 24
+    spriteID: b897047cf63224c62809a29bff1dc0d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 228}
+  - name: PencilBrawler_Frame_14
+    originalName: 
+    pivot: {x: 0.45945945, y: -0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 37
+      height: 24
+    spriteID: 83572fb22266c43aaa3afcc29eff7113
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: PencilBrawler_Frame_15
+    originalName: 
+    pivot: {x: 0.56666666, y: -0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 36
+      width: 30
+      height: 24
+    spriteID: 2fe9ac1b2e6b0427eadafc7a811163b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 36}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 954881266
+    name: PencilBrawler
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: PencilBrawler_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 8
+        y: 6
+        width: 33
+        height: 24
+      spriteId: cd38bb1bfa9d8464b8ad73de45db21bb
+    - name: PencilBrawler_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 8
+        y: 6
+        width: 33
+        height: 24
+      spriteId: 02ffbb9df02ae4808a5c23af87c258df
+    - name: PencilBrawler_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 8
+        y: 6
+        width: 33
+        height: 24
+      spriteId: dc9c9e1b6e75049a6aecf5a8dac71b3f
+    - name: PencilBrawler_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 12
+        y: 6
+        width: 25
+        height: 25
+      spriteId: bd1b33a2a35f447c8b0aed0f7dd6870c
+    - name: PencilBrawler_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 12
+        y: 6
+        width: 25
+        height: 25
+      spriteId: 52efaf29021c94947896f5d1de0519eb
+    - name: PencilBrawler_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 12
+        y: 6
+        width: 25
+        height: 25
+      spriteId: 3d8a43bc2a53e49e29b62db4a304e4d3
+    - name: PencilBrawler_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 9
+        y: 6
+        width: 32
+        height: 24
+      spriteId: dd053f5e5d1ad44389024fa94cbf1f2d
+    - name: PencilBrawler_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 9
+        y: 6
+        width: 32
+        height: 24
+      spriteId: 3f45aaacc663649e681e78209fb29b37
+    - name: PencilBrawler_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 9
+        y: 6
+        width: 32
+        height: 24
+      spriteId: 8396b2695314f4ce9ab72080905e2770
+    - name: PencilBrawler_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 12
+        y: 6
+        width: 25
+        height: 25
+      spriteId: 668325f0726104e4195fd8e39c790154
+    - name: PencilBrawler_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 12
+        y: 6
+        width: 25
+        height: 25
+      spriteId: 591f2c0120bf942f8bc568c64f6a5454
+    - name: PencilBrawler_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 12
+        y: 6
+        width: 25
+        height: 25
+      spriteId: 8bdff67ad1ff347a0b691e19d1ed6f14
+    - name: PencilBrawler_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 9
+        y: 6
+        width: 30
+        height: 24
+      spriteId: 2fd535a647aa647e6b4d0cd6935effa9
+    - name: PencilBrawler_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 9
+        y: 6
+        width: 32
+        height: 24
+      spriteId: b897047cf63224c62809a29bff1dc0d9
+    - name: PencilBrawler_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 9
+        y: 6
+        width: 37
+        height: 24
+      spriteId: 83572fb22266c43aaa3afcc29eff7113
+    - name: PencilBrawler_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 9
+        y: 6
+        width: 30
+        height: 24
+      spriteId: 2fe9ac1b2e6b0427eadafc7a811163b3
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 52, y: 38}
