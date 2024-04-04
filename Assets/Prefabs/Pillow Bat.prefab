@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3558590465459891539}
   - component: {fileID: 4508831106203668184}
   - component: {fileID: 3602809897981500762}
+  - component: {fileID: 8119084760541731340}
   m_Layer: 0
   m_Name: Pillow Bat
   m_TagString: Untagged
@@ -177,3 +178,24 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
+--- !u!95 &8119084760541731340
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5487407056136803605}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 562201d6d12b94fadb76041c0bfe2b48, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
