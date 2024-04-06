@@ -3,61 +3,63 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
-    
-    
-    
+
+
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce;
-    [SerializeField] private float coyoteTime = 0.1f;
-    private float coyoteTimeCounter;
-    [SerializeField] private float jumpBufferTime = 0.2f;
-    private float jumpBufferCounter;
-	private int airJumpCounter = 0;
-	[SerializeField] private int maxAirJumps;
-	
-	
-    [Header("Dash Info")] 
-    [SerializeField] private float dashSpeed;
-    [SerializeField] private float dashDuration;
-    [SerializeField] private float dashTime;
-   
-    private float xInput;
 
+    [Header("Jump Info")] [SerializeField] private float coyoteTime = 0.1f;
+    [SerializeField] private float coyoteTimeCounter;
+
+    [SerializeField] private float jumpBufferTime = 0.2f;
+    [SerializeField] private float jumpBufferCounter;
+
+    [Header("Dash Info")] [SerializeField] private float dashSpeed;
+    [SerializeField] private float dashDuration;
+    private float dashTime;
+
+    [SerializeField] private float dashCooldown;
+    private float dashCooldownTimer;
+
+
+    private float xInput;
     private int facingDir = 1;
     private bool facingRight = true;
 
-    [Header("Collision Info")]
-    [SerializeField] private float groundCheckDistance;
+    [Header("Collision Info")] [SerializeField]
+    private float groundCheckDistance;
+
     [SerializeField] private LayerMask whatIsGround;
     private bool isGrounded;
 
-    [Header("Item Progression")]
-    [SerializeField] private bool hasSword;
+    [Header("Item Progression")] [SerializeField]
+    private bool hasSword;
+
     [SerializeField] private bool hasBoots;
     [SerializeField] private bool hasGun;
     [SerializeField] private bool hasDash;
 
-    [Header("Health Info")]
-    [SerializeField] private float maxHealth = 100f;
+    [Header("Health Info")] [SerializeField]
+    private float maxHealth = 100f;
+
     [SerializeField] private float health = 0;
 
     //****************************************************************************
     // Start is called before the first frame update
-    void Start()    
+    void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
 
     }
-    
+
     //****************************************************************************
     //Update is called once per frame
-    void Update()   
+    void Update()
     {
         Movement();
         CheckInput();
@@ -66,12 +68,9 @@ public class Player : MonoBehaviour
         AnimatorControllers();
 
         //Dashing
-        dashTime = dashTime - Time.deltaTime;
-        if (Input.GetKeyDown((KeyCode.LeftShift)))
-        {
-            dashTime = dashDuration;
-        }
-
+        dashTime -= Time.deltaTime;
+        dashCooldownTimer -= Time.deltaTime;
+        
         //Jump buffer
         if (Input.GetButtonDown("Jump"))
         {
@@ -81,11 +80,6 @@ public class Player : MonoBehaviour
         {
             jumpBufferCounter -= Time.deltaTime;
         }
-		//else if (!Grounded() && airJumpCounter < maxAirJumps && Input.GetButtonDown("Jump"))
-		//{
-		//	isGrounded = true;
-			
-		//}
 
         //Coyote Time
         if (isGrounded)
@@ -96,17 +90,23 @@ public class Player : MonoBehaviour
         {
             coyoteTimeCounter -= Time.deltaTime;
         }
-        
+
     }
 
     private void CollisionChecks()
     {
-        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, whatIsGround);
+        isGrounded = Physics2D.Raycast(transform.position,
+            Vector2.down, groundCheckDistance, whatIsGround);
     }
 
     private void CheckInput()
     {
         xInput = Input.GetAxisRaw("Horizontal");
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            DashAbility();
+        }
 
         //Jumping (dynamic height)
         if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f)
@@ -115,6 +115,7 @@ public class Player : MonoBehaviour
 
             jumpBufferCounter = 0f;
         }
+
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
@@ -123,11 +124,20 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void DashAbility()
+    {
+        if (dashCooldownTimer < 0)
+        {
+            dashCooldownTimer = dashCooldown;
+            dashTime = dashDuration;
+        }
+    }
+
     private void Movement()
     {
         if (dashTime > 0)
         {
-            rb.velocity = new Vector2(xInput * dashSpeed, rb.velocity.y);
+            rb.velocity = new Vector2(xInput * dashSpeed, 0);
         }
         else
         {
@@ -142,6 +152,7 @@ public class Player : MonoBehaviour
           anim.SetFloat("yVelocity", rb.velocity.y);
           anim.SetBool("isMoving", isMoving);
           anim.SetBool("isGrounded", isGrounded);
+          anim.SetBool("isDashing", dashTime > 0);
     }
 
     private void Flip()
@@ -161,7 +172,8 @@ public class Player : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawLine(transform.position, new Vector3(transform.position.x, transform.position.y - groundCheckDistance));
+        Gizmos.DrawLine(transform.position, 
+            new Vector3(transform.position.x, transform.position.y - groundCheckDistance));
     }
 
     //****************************************************************************
