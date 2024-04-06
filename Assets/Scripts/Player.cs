@@ -12,13 +12,15 @@ public class Player : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce;
 
-    [Header("Jump Info")] [SerializeField] private float coyoteTime = 0.1f;
+    [Header("Jump Info")]
+    [SerializeField] private float coyoteTime = 0.1f;
     [SerializeField] private float coyoteTimeCounter;
 
     [SerializeField] private float jumpBufferTime = 0.2f;
     [SerializeField] private float jumpBufferCounter;
 
-    [Header("Dash Info")] [SerializeField] private float dashSpeed;
+    [Header("Dash Info")]
+    [SerializeField] private float dashSpeed;
     [SerializeField] private float dashDuration;
     private float dashTime;
 
@@ -30,21 +32,21 @@ public class Player : MonoBehaviour
     private int facingDir = 1;
     private bool facingRight = true;
 
-    [Header("Collision Info")] [SerializeField]
-    private float groundCheckDistance;
+    [Header("Collision Info")]
+    [SerializeField] private float groundCheckDistance;
 
     [SerializeField] private LayerMask whatIsGround;
     private bool isGrounded;
 
-    [Header("Item Progression")] [SerializeField]
-    private bool hasSword;
+    [Header("Item Progression")]
+    [SerializeField] private bool hasSword;
 
     [SerializeField] private bool hasBoots;
     [SerializeField] private bool hasGun;
     [SerializeField] private bool hasDash;
 
-    [Header("Health Info")] [SerializeField]
-    private float maxHealth = 100f;
+    [Header("Health Info")]
+    [SerializeField] private float maxHealth = 100f;
 
     [SerializeField] private float health = 0;
 
@@ -103,7 +105,7 @@ public class Player : MonoBehaviour
     {
         xInput = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetButtonDown("Dash") && hasDash)
         {
             DashAbility();
         }
@@ -188,7 +190,7 @@ public class Player : MonoBehaviour
         return health;
     }
 
-    //Inventory progression
+    //Inventory progression - accessed by UI
     public bool getHasSword()
     {
         return hasSword;
@@ -204,6 +206,24 @@ public class Player : MonoBehaviour
     public bool getHasDash()
     {
         return hasDash;
+    }
+
+    //Set by mannequin item collection
+    public void setHasSword(bool sword)
+    {
+        hasSword = sword;
+    }
+    public void setHasBoots(bool boots)
+    {
+        hasBoots = boots;
+    }
+    public void setHasGun(bool gun)
+    {
+        hasGun = gun;
+    }
+    public void setHasDash(bool dash)
+    {
+        hasDash = dash;
     }
 
 }

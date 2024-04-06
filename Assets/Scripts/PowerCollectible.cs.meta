@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: c2ab1244952314694ab85b202db42486
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - mySprite: {instanceID: 0}
+  - player: {instanceID: 0}
+  - swordStoneEmpty: {fileID: -3955653849870098129, guid: 485c71f22e86541aa88c739108418732, type: 3}
+  - bootsMannequinEmpty: {fileID: 8889770396792011328, guid: 5fa37d8406472412b90780ed5b16d26e, type: 3}
+  - gunMannequinEmpty: {fileID: 2024118586721563326, guid: 5fa37d8406472412b90780ed5b16d26e, type: 3}
+  - dashMannequinEmpty: {fileID: -8172717083407032477, guid: 5fa37d8406472412b90780ed5b16d26e, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

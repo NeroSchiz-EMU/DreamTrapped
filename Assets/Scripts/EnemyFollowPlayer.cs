@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyFollowPlayer : MonoBehaviour
 {
     public float speed;
-    public float lineOfSite;
+    public float lineOfSight;
     private Transform player;
     
     [Header("Collision Info")]
@@ -21,7 +21,7 @@ public class EnemyFollowPlayer : MonoBehaviour
     void Update()
     {
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
-        if (distanceFromPlayer < lineOfSite)
+        if (distanceFromPlayer < lineOfSight)
         {
            transform.position = Vector2.MoveTowards(this.transform.position, 
                         player.position, speed * Time.deltaTime); 
@@ -32,7 +32,7 @@ public class EnemyFollowPlayer : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, lineOfSite); 
+        Gizmos.DrawWireSphere(transform.position, lineOfSight); 
     }
     
 }

@@ -145,7 +145,7 @@ ScriptedImporter:
   - name: Boots_empty
     originalName: 
     pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -184,8 +184,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Gun_empty
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5833333, y: 0.5}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -224,8 +224,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Dash_empty
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0.546875}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
