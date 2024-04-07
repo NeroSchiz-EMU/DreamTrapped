@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: 30915346fb4374f8da30c33350daa9fb
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Background-houses_Clip
+    second: {fileID: 7400000, guid: e4341389c72f647108f0789ba7bb799a, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -97,7 +102,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638472185641669030
+  platformSettingsDirtyTick: 638480328549955980
   textureAssetName: 
   singleSpriteImportData:
   - name: 

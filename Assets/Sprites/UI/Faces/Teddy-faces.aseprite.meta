@@ -364,15 +364,15 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: Teddy-faces_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 5152
-      width: 1440
-      height: 1712
+      y: 4950
+      width: 1434
+      height: 1642
     spriteID: 8b64900e435af41909a1b9bab6ecef6e
     spriteBone: []
     spriteOutline: []
@@ -384,15 +384,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Teddy-faces_1
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1448
-      y: 5152
-      width: 1440
-      height: 1712
+      x: 1446
+      y: 4950
+      width: 1434
+      height: 1642
     spriteID: 546001fd66f2f454dba024441f486b95
     spriteBone: []
     spriteOutline: []
@@ -404,15 +404,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Teddy-faces_2
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2892
-      y: 5152
-      width: 1440
-      height: 1712
+      x: 2886
+      y: 4950
+      width: 1434
+      height: 1642
     spriteID: 85630afd69f224c46ad35a0252b8134c
     spriteBone: []
     spriteOutline: []
@@ -424,15 +424,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Teddy-faces_3
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 3436
-      width: 1440
-      height: 1712
+      y: 3300
+      width: 1434
+      height: 1644
     spriteID: 9d042f26d729f46b3a30d1e1de3227d2
     spriteBone: []
     spriteOutline: []
@@ -444,15 +444,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Teddy-faces_4
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1448
-      y: 3436
-      width: 1440
-      height: 1712
+      x: 1446
+      y: 3300
+      width: 1434
+      height: 1644
     spriteID: bf355c47846924fa5a26adca519b309c
     spriteBone: []
     spriteOutline: []
@@ -464,15 +464,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Teddy-faces_5
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2892
-      y: 3436
-      width: 1440
-      height: 1712
+      x: 2886
+      y: 3300
+      width: 1434
+      height: 1644
     spriteID: b5523ec30425f48a68000896804051b5
     spriteBone: []
     spriteOutline: []
@@ -484,15 +484,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Teddy-faces_6
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 1720
-      width: 1440
-      height: 1712
+      y: 1652
+      width: 1434
+      height: 1642
     spriteID: 21887e344b8ec40d68e81a83fefe3330
     spriteBone: []
     spriteOutline: []
@@ -504,15 +504,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Teddy-faces_7
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1448
-      y: 1720
-      width: 1440
-      height: 1712
+      x: 1446
+      y: 1652
+      width: 1434
+      height: 1642
     spriteID: c729fc6335ae74c0587f1a4208b939a8
     spriteBone: []
     spriteOutline: []
@@ -524,15 +524,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Teddy-faces_8
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2892
-      y: 1720
-      width: 1440
-      height: 1712
+      x: 2886
+      y: 1652
+      width: 1434
+      height: 1642
     spriteID: b361aa310ec07420892faa2bac8c69b3
     spriteBone: []
     spriteOutline: []
@@ -544,15 +544,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Teddy-faces_9
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
-      width: 1436
-      height: 1712
+      y: 2
+      width: 1434
+      height: 1644
     spriteID: 13d005524e0f1469682734d8fc8697c4
     spriteBone: []
     spriteOutline: []
@@ -564,15 +564,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Teddy-faces_10
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1448
-      y: 4
-      width: 1436
-      height: 1712
+      x: 1446
+      y: 2
+      width: 1434
+      height: 1644
     spriteID: e3d30e1700d5341edb82db7acf59aa27
     spriteBone: []
     spriteOutline: []
@@ -584,15 +584,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Teddy-faces_11
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2892
-      y: 4
-      width: 1436
-      height: 1712
+      x: 2886
+      y: 2
+      width: 1434
+      height: 1644
     spriteID: 852dfce15f7834b4a89d50bb13a8b8bd
     spriteBone: []
     spriteOutline: []
@@ -613,98 +613,98 @@ ScriptedImporter:
     - name: Teddy-faces_Frame_0
       frameIndex: 0
       cellRect:
-        x: 27
-        y: -123
-        width: 2091
-        height: 1934
+        x: 323
+        y: 0
+        width: 1433
+        height: 1641
       spriteId: fef4afd22ea594dd48ab268a30538d31
     - name: Teddy-faces_Frame_1
       frameIndex: 1
       cellRect:
-        x: 27
-        y: -123
-        width: 2091
-        height: 1934
+        x: 323
+        y: 0
+        width: 1433
+        height: 1641
       spriteId: c54655c4adea6492d994aeee7e46704f
     - name: Teddy-faces_Frame_2
       frameIndex: 2
       cellRect:
-        x: 27
-        y: -123
-        width: 2091
-        height: 1934
+        x: 323
+        y: 0
+        width: 1433
+        height: 1641
       spriteId: 39dde9293c067486aa7dac6435f438c2
     - name: Teddy-faces_Frame_3
       frameIndex: 3
       cellRect:
-        x: 27
-        y: -123
-        width: 2091
-        height: 1934
+        x: 323
+        y: 0
+        width: 1433
+        height: 1641
       spriteId: c0c2fdc23741e4aff90c74d0ced657e3
     - name: Teddy-faces_Frame_4
       frameIndex: 4
       cellRect:
-        x: 27
-        y: -123
-        width: 2091
-        height: 1934
+        x: 323
+        y: 0
+        width: 1433
+        height: 1641
       spriteId: d88f25e0d1f20416ab98e3a6d4be017c
     - name: Teddy-faces_Frame_5
       frameIndex: 5
       cellRect:
-        x: 27
-        y: -123
-        width: 2091
-        height: 1934
+        x: 323
+        y: 0
+        width: 1433
+        height: 1641
       spriteId: 8b252e0ae856b4f0b9a71212ed5ff351
     - name: Teddy-faces_Frame_6
       frameIndex: 6
       cellRect:
-        x: 27
-        y: -123
-        width: 2091
-        height: 1934
+        x: 323
+        y: 0
+        width: 1433
+        height: 1641
       spriteId: 2784b57b1d66d43088590800cb70ff7c
     - name: Teddy-faces_Frame_7
       frameIndex: 7
       cellRect:
-        x: 27
-        y: -123
-        width: 2091
-        height: 1934
+        x: 323
+        y: 0
+        width: 1433
+        height: 1641
       spriteId: f248593332e324621acced59ce809862
     - name: Teddy-faces_Frame_8
       frameIndex: 8
       cellRect:
-        x: 27
-        y: -123
-        width: 2091
-        height: 1934
+        x: 323
+        y: 0
+        width: 1433
+        height: 1641
       spriteId: 1412682d028c74cb1a04a4841431d69d
     - name: Teddy-faces_Frame_9
       frameIndex: 9
       cellRect:
-        x: 27
-        y: -123
-        width: 2091
-        height: 1934
+        x: 323
+        y: 0
+        width: 1433
+        height: 1641
       spriteId: 51b63c0cd9b584c35bfed7d9447fbdd8
     - name: Teddy-faces_Frame_10
       frameIndex: 10
       cellRect:
-        x: 27
-        y: -123
-        width: 2091
-        height: 1934
+        x: 323
+        y: 0
+        width: 1433
+        height: 1641
       spriteId: 78c27f47a7bc44f9da03f9c34f42e1dc
     - name: Teddy-faces_Frame_11
       frameIndex: 11
       cellRect:
         x: 323
-        y: -68
-        width: 1436
-        height: 1709
+        y: 0
+        width: 1433
+        height: 1641
       spriteId: c3954b8db7f074cfa9c19b189787ce37
     linkedCells: []
     parentIndex: -1

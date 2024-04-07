@@ -284,15 +284,15 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: Dreamer-faces_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 5524
-      width: 1780
-      height: 1836
+      y: 5456
+      width: 1778
+      height: 1812
     spriteID: 8423974cb50224df3aea75322f5bf2d4
     spriteBone: []
     spriteOutline: []
@@ -304,15 +304,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Dreamer-faces_1
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1788
-      y: 5524
-      width: 1780
-      height: 1836
+      x: 1790
+      y: 5456
+      width: 1778
+      height: 1812
     spriteID: 129a9bbfb45584daca65d6a00543854e
     spriteBone: []
     spriteOutline: []
@@ -324,15 +324,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Dreamer-faces_2
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 3684
-      width: 1780
-      height: 1836
+      y: 3638
+      width: 1778
+      height: 1812
     spriteID: fbf76a187d077457bbdf5e9a79537726
     spriteBone: []
     spriteOutline: []
@@ -344,15 +344,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Dreamer-faces_3
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1788
-      y: 3684
-      width: 1780
-      height: 1836
+      x: 1790
+      y: 3638
+      width: 1778
+      height: 1812
     spriteID: 1fdefc5413161407e92c4073dc9350c3
     spriteBone: []
     spriteOutline: []
@@ -364,15 +364,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Dreamer-faces_4
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 1844
-      width: 1780
-      height: 1836
+      y: 1820
+      width: 1778
+      height: 1812
     spriteID: ea443163b64e94a1c8d6f9fe71b6886c
     spriteBone: []
     spriteOutline: []
@@ -384,15 +384,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Dreamer-faces_5
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1788
-      y: 1844
-      width: 1780
-      height: 1836
+      x: 1790
+      y: 1820
+      width: 1778
+      height: 1812
     spriteID: f1b03e88c83a6475cae42128507355eb
     spriteBone: []
     spriteOutline: []
@@ -404,15 +404,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Dreamer-faces_6
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
-      width: 1780
-      height: 1832
+      y: 2
+      width: 1778
+      height: 1812
     spriteID: 3b3d18090e0d34b7e854a34c49151836
     spriteBone: []
     spriteOutline: []
@@ -424,15 +424,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Dreamer-faces_7
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1788
-      y: 4
-      width: 1780
-      height: 1832
+      x: 1790
+      y: 2
+      width: 1778
+      height: 1812
     spriteID: e959529b8e97740a19e6988951dda27c
     spriteBone: []
     spriteOutline: []
@@ -453,66 +453,66 @@ ScriptedImporter:
     - name: Dreamer-faces_Frame_0
       frameIndex: 0
       cellRect:
-        x: -96
-        y: -43
-        width: 2091
-        height: 1934
+        x: 185
+        y: 0
+        width: 1778
+        height: 1810
       spriteId: acee9760e2dcd4bb4a097353509de2d0
     - name: Dreamer-faces_Frame_1
       frameIndex: 1
       cellRect:
-        x: -96
-        y: -43
-        width: 2091
-        height: 1934
+        x: 185
+        y: 0
+        width: 1778
+        height: 1810
       spriteId: 26059f64075024adf972fb788e193a9d
     - name: Dreamer-faces_Frame_2
       frameIndex: 2
       cellRect:
-        x: -96
-        y: -43
-        width: 2091
-        height: 1934
+        x: 185
+        y: 0
+        width: 1778
+        height: 1810
       spriteId: 52cc56cfb105b42aabf88c3f17b9f9ca
     - name: Dreamer-faces_Frame_3
       frameIndex: 3
       cellRect:
-        x: -96
-        y: -43
-        width: 2091
-        height: 1934
+        x: 185
+        y: 0
+        width: 1778
+        height: 1810
       spriteId: b17c492f56f1a4ecaad091706a2ba75a
     - name: Dreamer-faces_Frame_4
       frameIndex: 4
       cellRect:
-        x: -96
-        y: -43
-        width: 2091
-        height: 1934
+        x: 185
+        y: 0
+        width: 1778
+        height: 1810
       spriteId: b66f2505021b94691921f2b0dce0fe9c
     - name: Dreamer-faces_Frame_5
       frameIndex: 5
       cellRect:
-        x: -96
-        y: -43
-        width: 2091
-        height: 1934
+        x: 185
+        y: 0
+        width: 1778
+        height: 1810
       spriteId: e252f87f0765d4de2adbad13d73ec01d
     - name: Dreamer-faces_Frame_6
       frameIndex: 6
       cellRect:
-        x: -96
-        y: -43
-        width: 2091
-        height: 1934
+        x: 185
+        y: 0
+        width: 1778
+        height: 1810
       spriteId: 111a77043bb3249df819482b90f64f54
     - name: Dreamer-faces_Frame_7
       frameIndex: 7
       cellRect:
-        x: -96
-        y: -43
-        width: 2091
-        height: 1934
+        x: 185
+        y: 0
+        width: 1778
+        height: 1810
       spriteId: 95b4208ea7b684c69a269a849c17dcd6
     linkedCells: []
     parentIndex: -1
