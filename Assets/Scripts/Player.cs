@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     [Header("Jump Info")]
     [SerializeField] private float coyoteTime = 0.1f;
     [SerializeField] private float coyoteTimeCounter;
+    private bool doubleJump;
 
     [SerializeField] private float jumpBufferTime = 0.2f;
     [SerializeField] private float jumpBufferCounter;
@@ -27,8 +28,11 @@ public class Player : MonoBehaviour
     [SerializeField] private float dashCooldown;
     private float dashCooldownTimer;
 
+    [Header("Attack Info")] 
+    private bool isAttacking;
 
     private float xInput;
+    
     private int facingDir = 1;
     private bool facingRight = true;
 
@@ -73,6 +77,20 @@ public class Player : MonoBehaviour
         dashTime -= Time.deltaTime;
         dashCooldownTimer -= Time.deltaTime;
         
+        //Double Jump
+        if (isGrounded && !Input.GetButton("Jump"))
+        {
+            doubleJump = false;
+        }
+        if (Input.GetButtonDown("Jump") && hasBoots)
+        {
+            if (isGrounded || doubleJump)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                doubleJump = !doubleJump;
+            }
+        }
+        
         //Jump buffer
         if (Input.GetButtonDown("Jump"))
         {
@@ -110,6 +128,17 @@ public class Player : MonoBehaviour
             DashAbility();
         }
 
+        if (Input.GetButtonDown("Melee") && hasSword)
+        {
+            if (!isGrounded == false)
+                isAttacking = true;
+        }
+        if (Input.GetButtonUp("Melee") && hasSword)
+        {
+            if (isGrounded)
+                isAttacking = false;
+        }
+
         //Jumping (dynamic height)
         if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f)
         {
@@ -128,7 +157,7 @@ public class Player : MonoBehaviour
 
     private void DashAbility()
     {
-        if (dashCooldownTimer < 0)
+        if (dashCooldownTimer < 0 && !isAttacking)
         {
             dashCooldownTimer = dashCooldown;
             dashTime = dashDuration;
@@ -137,9 +166,14 @@ public class Player : MonoBehaviour
 
     private void Movement()
     {
-        if (dashTime > 0)
+        if (isAttacking)
         {
-            rb.velocity = new Vector2(xInput * dashSpeed, 0);
+            rb.velocity = new Vector2(0,0);
+        }
+        
+        else if (dashTime > 0)
+        {
+            rb.velocity = new Vector2(facingDir * dashSpeed, 0);
         }
         else
         {
@@ -155,6 +189,7 @@ public class Player : MonoBehaviour
           anim.SetBool("isMoving", isMoving);
           anim.SetBool("isGrounded", isGrounded);
           anim.SetBool("isDashing", dashTime > 0);
+          anim.SetBool("isAttacking", isAttacking);
     }
 
     private void Flip()
