@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
 
+    private bool inCutscene;
 
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce;
@@ -44,7 +45,6 @@ public class Player : MonoBehaviour
 
     [Header("Item Progression")]
     [SerializeField] private bool hasSword;
-
     [SerializeField] private bool hasBoots;
     [SerializeField] private bool hasGun;
     [SerializeField] private bool hasDash;
@@ -121,43 +121,51 @@ public class Player : MonoBehaviour
 
     private void CheckInput()
     {
-        xInput = Input.GetAxisRaw("Horizontal");
-
-        if (Input.GetButtonDown("Dash") && hasDash)
+        if (!inCutscene)
         {
-            DashAbility();
-        }
+            xInput = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Melee") && hasSword)
+            if (Input.GetButtonDown("Dash") && hasDash)
+            {
+                DashAbility();
+            }
+
+            if (Input.GetButtonDown("Melee") && hasSword)
+            {
+                if (!isGrounded == false)
+                    isAttacking = true;
+            }
+            if (Input.GetButtonUp("Melee") && hasSword)
+            {
+                if (isGrounded)
+                    isAttacking = false;
+            }
+
+            //Jumping (dynamic height)
+            if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+
+                jumpBufferCounter = 0f;
+            }
+
+            if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+
+                coyoteTimeCounter = 0f;
+            }
+        }
+        else if (inCutscene)
         {
-            if (!isGrounded == false)
-                isAttacking = true;
+            rb.velocity = new Vector2(0, -10);
         }
-        if (Input.GetButtonUp("Melee") && hasSword)
-        {
-            if (isGrounded)
-                isAttacking = false;
-        }
-
-        //Jumping (dynamic height)
-        if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-
-            jumpBufferCounter = 0f;
-        }
-
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-
-            coyoteTimeCounter = 0f;
-        }
+        
     }
 
     private void DashAbility()
     {
-        if (dashCooldownTimer < 0 && !isAttacking)
+        if (dashCooldownTimer < 0 && !isAttacking && !inCutscene)
         {
             dashCooldownTimer = dashCooldown;
             dashTime = dashDuration;
@@ -175,7 +183,7 @@ public class Player : MonoBehaviour
         {
             rb.velocity = new Vector2(facingDir * dashSpeed, 0);
         }
-        else
+        else if (!inCutscene)
         {
             rb.velocity = new Vector2(xInput * moveSpeed, rb.velocity.y);
         }
@@ -196,7 +204,7 @@ public class Player : MonoBehaviour
     {
         facingDir = facingDir * -1;
         facingRight = !facingRight;
-        transform.Rotate(0, 180, 0);
+        anim.transform.Rotate(0, 180, 0);
     }
 
     private void FlipController()
@@ -243,6 +251,11 @@ public class Player : MonoBehaviour
         return hasDash;
     }
 
+    public bool getInCutscene()
+    {
+        return inCutscene;
+    }
+
     //Set by mannequin item collection
     public void setHasSword(bool sword)
     {
@@ -259,6 +272,11 @@ public class Player : MonoBehaviour
     public void setHasDash(bool dash)
     {
         hasDash = dash;
+    }
+
+    public void setInCutscene(bool i)
+    {
+        inCutscene = i;
     }
 
 }

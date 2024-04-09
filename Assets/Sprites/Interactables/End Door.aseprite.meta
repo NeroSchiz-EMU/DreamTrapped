@@ -1,0 +1,1349 @@
+fileFormatVersion: 2
+guid: cf7de26118d174eefb57f3bbac75587e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Closed
+    second: {fileID: 7400000, guid: 3572ff8869217410e91ac37e561b7b5d, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Open
+    second: {fileID: 7400000, guid: 1ef899247e3f143af9f83da462fa29d0, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638482666185293080
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: End Door_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 141
+      height: 182
+    spriteID: 12798443602b94ef0a66035284dcf009
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: End Door_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 194
+      width: 141
+      height: 182
+    spriteID: 168fb7ff080bc411ea30b167fca729ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 194}
+  - name: End Door_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 384
+      width: 141
+      height: 182
+    spriteID: ce243d77e2c6146ef8a56ec061710c3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 384}
+  - name: End Door_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 574
+      width: 141
+      height: 182
+    spriteID: d7b55866143e74e61b3ab0623870363e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 574}
+  - name: End Door_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 764
+      width: 141
+      height: 182
+    spriteID: 341e780cd93a7442181dbadd3ab2848a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 764}
+  - name: End Door_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 954
+      width: 141
+      height: 182
+    spriteID: 8ec9f317943254b888f83ecdd154f219
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 954}
+  - name: End Door_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1144
+      width: 141
+      height: 182
+    spriteID: 396090b5f510a4ad7b6ef4b4c0186905
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1144}
+  - name: End Door_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1334
+      width: 141
+      height: 182
+    spriteID: 6403f87d7a86843f6bd3bca46c004718
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1334}
+  - name: End Door_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1524
+      width: 141
+      height: 182
+    spriteID: 3db0b3971a0294352a61a9d4aaa5c138
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1524}
+  - name: End Door_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1714
+      width: 141
+      height: 182
+    spriteID: 0fdc405aa7e774281a34375ddb6aa9c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1714}
+  - name: End Door_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 4
+      width: 141
+      height: 182
+    spriteID: 6822d28c201264832af18ccdb94b2637
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 153, y: 4}
+  - name: End Door_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 194
+      width: 141
+      height: 182
+    spriteID: ff517abc7fc974be1ae1cba654ed8c5f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 153, y: 194}
+  - name: End Door_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 384
+      width: 141
+      height: 182
+    spriteID: e96b24849cc9042b2a7eea39b04f76e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 153, y: 384}
+  - name: End Door_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 574
+      width: 141
+      height: 182
+    spriteID: c944b8a170c7446e3834007391a883db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 153, y: 574}
+  - name: End Door_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 764
+      width: 141
+      height: 182
+    spriteID: b94c6e81bf0f0494db84e24209a6404a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 153, y: 764}
+  - name: End Door_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 954
+      width: 141
+      height: 182
+    spriteID: 18bae023f749d4c0bb6ba52733c399e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 153, y: 954}
+  - name: End Door_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 1144
+      width: 141
+      height: 182
+    spriteID: ec4081cacd08a4b77bdc4ef20c4565fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 153, y: 1144}
+  - name: End Door_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 1334
+      width: 141
+      height: 182
+    spriteID: d866abd40045942009bd97bd0a3c2a2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 153, y: 1334}
+  - name: End Door_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 1524
+      width: 141
+      height: 182
+    spriteID: 6c5808650fb954f438fe1a79b0b5fdc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 153, y: 1524}
+  - name: End Door_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 1714
+      width: 141
+      height: 182
+    spriteID: 75f31c11a75b54d62b95e9f2b4f2b0bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 153, y: 1714}
+  - name: End Door_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 4
+      width: 141
+      height: 182
+    spriteID: 5af069d44515c471da6cf8ce09c5d0fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 4}
+  - name: End Door_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 194
+      width: 141
+      height: 182
+    spriteID: 1a1696ae04e634b4b8a7a82bab05e94a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 194}
+  - name: End Door_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 384
+      width: 141
+      height: 182
+    spriteID: 110dc16c00f374f4eb005e00d99f6a9a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 384}
+  - name: End Door_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 574
+      width: 141
+      height: 182
+    spriteID: bb489de3d060146e3ac17cc51be11548
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 574}
+  - name: End Door_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 764
+      width: 141
+      height: 182
+    spriteID: 9006cfd1e4d88419d8fe1acd6e1bca6d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 764}
+  - name: End Door_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 954
+      width: 141
+      height: 182
+    spriteID: b49da357801474bcab5ba6d0151fcf29
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 954}
+  - name: End Door_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 1144
+      width: 141
+      height: 182
+    spriteID: b7d2b0b36d3324a6d9510033032eb349
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 1144}
+  - name: End Door_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 1334
+      width: 141
+      height: 182
+    spriteID: 117f9826542f7453693774aa4576e761
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 1334}
+  - name: End Door_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 1524
+      width: 141
+      height: 182
+    spriteID: 10e137c6b7535432d9aea6c362f6cba7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 1524}
+  - name: End Door_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 1714
+      width: 141
+      height: 182
+    spriteID: 976a3bfbc85b047229662c3ea8a152d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 1714}
+  - name: End Door_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 451
+      y: 4
+      width: 141
+      height: 182
+    spriteID: 6c66104ce695c43a589db3522f06b5d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 451, y: 4}
+  - name: End Door_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 451
+      y: 194
+      width: 141
+      height: 182
+    spriteID: e1c48df6bfc7a4b5d943a18d408825aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 451, y: 194}
+  - name: End Door_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 451
+      y: 384
+      width: 141
+      height: 182
+    spriteID: 2bb61f598fef2414e98a1ecc3edb0662
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 451, y: 384}
+  - name: End Door_Frame_33
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 451
+      y: 574
+      width: 141
+      height: 182
+    spriteID: c3964a4d5318f4d9cb553f6ff268ed49
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 451, y: 574}
+  - name: End Door_Frame_34
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 451
+      y: 764
+      width: 141
+      height: 182
+    spriteID: 9bd7bfd04ecc04df0b39fcd5c32c4324
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 451, y: 764}
+  - name: End Door_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 451
+      y: 954
+      width: 141
+      height: 182
+    spriteID: 5d9407fed262f4248a62e12ac8307536
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 451, y: 954}
+  - name: End Door_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 451
+      y: 1144
+      width: 141
+      height: 182
+    spriteID: 0d1edf4d0c546437daaff61a809595f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 451, y: 1144}
+  - name: End Door_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 451
+      y: 1334
+      width: 141
+      height: 182
+    spriteID: e35b9927f69bb4a169285e1b8609e13d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 451, y: 1334}
+  - name: End Door_Frame_38
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 451
+      y: 1524
+      width: 141
+      height: 182
+    spriteID: 22f8977f439d24f359fc8b48e58fd660
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 451, y: 1524}
+  - name: End Door_Frame_39
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 451
+      y: 1714
+      width: 141
+      height: 182
+    spriteID: 44736bf53296f48e9babbd8445f4eff6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 451, y: 1714}
+  - name: End Door_Frame_40
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 600
+      y: 4
+      width: 141
+      height: 182
+    spriteID: d1a824f4a441c4550bbe351a4b63085a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 600, y: 4}
+  - name: End Door_Frame_41
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 600
+      y: 194
+      width: 141
+      height: 182
+    spriteID: ecac45c7c740b4df8bafb600536ae7d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 600, y: 194}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 283600793
+    name: End Door
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: End Door_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 12798443602b94ef0a66035284dcf009
+    - name: End Door_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 168fb7ff080bc411ea30b167fca729ce
+    - name: End Door_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: ce243d77e2c6146ef8a56ec061710c3e
+    - name: End Door_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: d7b55866143e74e61b3ab0623870363e
+    - name: End Door_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 341e780cd93a7442181dbadd3ab2848a
+    - name: End Door_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 8ec9f317943254b888f83ecdd154f219
+    - name: End Door_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 396090b5f510a4ad7b6ef4b4c0186905
+    - name: End Door_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 6403f87d7a86843f6bd3bca46c004718
+    - name: End Door_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 3db0b3971a0294352a61a9d4aaa5c138
+    - name: End Door_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 0fdc405aa7e774281a34375ddb6aa9c0
+    - name: End Door_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 6822d28c201264832af18ccdb94b2637
+    - name: End Door_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: ff517abc7fc974be1ae1cba654ed8c5f
+    - name: End Door_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: e96b24849cc9042b2a7eea39b04f76e4
+    - name: End Door_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: c944b8a170c7446e3834007391a883db
+    - name: End Door_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: b94c6e81bf0f0494db84e24209a6404a
+    - name: End Door_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 18bae023f749d4c0bb6ba52733c399e1
+    - name: End Door_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: ec4081cacd08a4b77bdc4ef20c4565fe
+    - name: End Door_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: d866abd40045942009bd97bd0a3c2a2e
+    - name: End Door_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 6c5808650fb954f438fe1a79b0b5fdc9
+    - name: End Door_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 75f31c11a75b54d62b95e9f2b4f2b0bd
+    - name: End Door_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 5af069d44515c471da6cf8ce09c5d0fe
+    - name: End Door_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 1a1696ae04e634b4b8a7a82bab05e94a
+    - name: End Door_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 110dc16c00f374f4eb005e00d99f6a9a
+    - name: End Door_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: bb489de3d060146e3ac17cc51be11548
+    - name: End Door_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 9006cfd1e4d88419d8fe1acd6e1bca6d
+    - name: End Door_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: b49da357801474bcab5ba6d0151fcf29
+    - name: End Door_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: b7d2b0b36d3324a6d9510033032eb349
+    - name: End Door_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 117f9826542f7453693774aa4576e761
+    - name: End Door_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 10e137c6b7535432d9aea6c362f6cba7
+    - name: End Door_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 976a3bfbc85b047229662c3ea8a152d2
+    - name: End Door_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 6c66104ce695c43a589db3522f06b5d3
+    - name: End Door_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: e1c48df6bfc7a4b5d943a18d408825aa
+    - name: End Door_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 2bb61f598fef2414e98a1ecc3edb0662
+    - name: End Door_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: c3964a4d5318f4d9cb553f6ff268ed49
+    - name: End Door_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 9bd7bfd04ecc04df0b39fcd5c32c4324
+    - name: End Door_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 5d9407fed262f4248a62e12ac8307536
+    - name: End Door_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 0d1edf4d0c546437daaff61a809595f9
+    - name: End Door_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: e35b9927f69bb4a169285e1b8609e13d
+    - name: End Door_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 22f8977f439d24f359fc8b48e58fd660
+    - name: End Door_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: 44736bf53296f48e9babbd8445f4eff6
+    - name: End Door_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: d1a824f4a441c4550bbe351a4b63085a
+    - name: End Door_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 1
+        y: 0
+        width: 141
+        height: 182
+      spriteId: ecac45c7c740b4df8bafb600536ae7d5
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 143, y: 183}
