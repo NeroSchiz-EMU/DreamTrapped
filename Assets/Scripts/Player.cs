@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float coyoteTime = 0.1f;
     [SerializeField] private float coyoteTimeCounter;
     private bool doubleJump;
+    private bool isJumping;
 
     [SerializeField] private float jumpBufferTime = 0.2f;
     [SerializeField] private float jumpBufferCounter;
@@ -31,6 +32,8 @@ public class Player : MonoBehaviour
 
     [Header("Attack Info")] 
     private bool isAttacking;
+    private bool isAirAttacking;
+    
 
     private float xInput;
     
@@ -140,6 +143,18 @@ public class Player : MonoBehaviour
                 if (isGrounded)
                     isAttacking = false;
             }
+            
+            if (Input.GetButtonDown("Melee") && hasSword)
+            {
+                if (isGrounded == false)
+                    isAirAttacking = true;
+            }
+            if (Input.GetButtonUp("Melee") && hasSword)
+            {
+                if (isGrounded)
+                    isAirAttacking = false;
+            }
+            
 
             //Jumping (dynamic height)
             if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f)
@@ -198,6 +213,7 @@ public class Player : MonoBehaviour
           anim.SetBool("isGrounded", isGrounded);
           anim.SetBool("isDashing", dashTime > 0);
           anim.SetBool("isAttacking", isAttacking);
+          anim.SetBool("isAirAttacking", isAirAttacking);
     }
 
     private void Flip()
