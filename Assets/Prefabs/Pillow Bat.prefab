@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  lineOfSight: 0
+  lineOfSight: 8
   groundCheckDistance: 1
   whatIsGround:
     serializedVersion: 2

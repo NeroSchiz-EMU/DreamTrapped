@@ -1,10 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    
+    
     private Rigidbody2D rb;
     private Animator anim;
 
@@ -26,15 +29,18 @@ public class Player : MonoBehaviour
     [SerializeField] private float dashSpeed;
     [SerializeField] private float dashDuration;
     private float dashTime;
-
     [SerializeField] private float dashCooldown;
     private float dashCooldownTimer;
 
     [Header("Attack Info")] 
     private bool isAttacking;
     private bool isAirAttacking;
-    
 
+    [Header("Shooting Info")]
+    Gun[] guns;
+    private bool isShooting;
+    
+    
     private float xInput;
     
     private int facingDir = 1;
@@ -61,9 +67,10 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
+        guns = transform.GetComponentsInChildren<Gun>();
         anim = GetComponentInChildren<Animator>();
-
     }
 
     //****************************************************************************
@@ -155,6 +162,21 @@ public class Player : MonoBehaviour
                     isAirAttacking = false;
             }
             
+            if (Input.GetButtonDown("Shoot") && hasGun)
+            {
+                if (!isGrounded == false)
+                    isShooting = true;
+                foreach (Gun gun in guns)
+                {
+                    gun.Shoot();
+                }
+            }
+            if (Input.GetButtonUp("Shoot") && hasGun)
+            {
+                if (isGrounded)
+                    isShooting = false;
+            }
+            
 
             //Jumping (dynamic height)
             if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f)
@@ -214,13 +236,16 @@ public class Player : MonoBehaviour
           anim.SetBool("isDashing", dashTime > 0);
           anim.SetBool("isAttacking", isAttacking);
           anim.SetBool("isAirAttacking", isAirAttacking);
+          anim.SetBool("isShooting", isShooting);
     }
 
     private void Flip()
     {
-        facingDir = facingDir * -1;
+        // facingDir = facingDir * -1;
+        // facingRight = !facingRight;
+        facingDir = -facingDir;
         facingRight = !facingRight;
-        anim.transform.Rotate(0, 180, 0);
+        anim.transform.Rotate(0f, 180f, 0f);
     }
 
     private void FlipController()
