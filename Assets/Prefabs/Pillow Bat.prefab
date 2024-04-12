@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8119084760541731340}
   m_Layer: 0
   m_Name: Pillow Bat
-  m_TagString: Untagged
+  m_TagString: Hurts
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  lineOfSite: 10
+  lineOfSight: 0
   groundCheckDistance: 1
   whatIsGround:
     serializedVersion: 2

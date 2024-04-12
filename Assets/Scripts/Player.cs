@@ -237,6 +237,23 @@ public class Player : MonoBehaviour
             new Vector3(transform.position.x, transform.position.y - groundCheckDistance));
     }
 
+    /*private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Hurts")
+        {
+            StartCoroutine(TakeDamage());
+            Debug.Log("ouchies");
+        }
+    }
+
+    IEnumerator TakeDamage()
+    {
+        health += 5;
+        yield return new WaitForSeconds(0.5f);
+
+    }*/
+
+
     //****************************************************************************
     //Get functions
 
@@ -272,6 +289,9 @@ public class Player : MonoBehaviour
         return inCutscene;
     }
 
+    //****************************************************************************
+    //Set functions
+
     //Set by mannequin item collection
     public void setHasSword(bool sword)
     {
@@ -293,6 +313,18 @@ public class Player : MonoBehaviour
     public void setInCutscene(bool i)
     {
         inCutscene = i;
+    }
+
+    //can take Pos or Neg to take health or heal health respectively
+    //our opposite health system is so confusing in code on god
+    public void changeHealth(float h)
+    {
+        health = Mathf.Clamp(health + h, 0, maxHealth); //limits health to 0
+        //Debug.Log(health);
+    }
+    public void resetHealth()
+    {
+        health = 0;
     }
 
 }

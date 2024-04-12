@@ -123,15 +123,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: SleepyCloud_Frame_0
     originalName: 
-    pivot: {x: 0.51851857, y: 0}
+    pivot: {x: 0.5217391, y: -0.03846154}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 27
-      height: 25
+      width: 23
+      height: 26
     spriteID: 4b70d9f1765f141408fb5dd1c83efac7
     spriteBone: []
     spriteOutline: []
@@ -143,15 +143,15 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: SleepyCloud_Frame_1
     originalName: 
-    pivot: {x: 0.48148146, y: 0}
+    pivot: {x: 0.47826084, y: -0.03846154}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 37
-      width: 27
-      height: 25
+      x: 35
+      y: 4
+      width: 23
+      height: 26
     spriteID: 144555970bd98714cad7df21eb696d44
     spriteBone: []
     spriteOutline: []
@@ -160,7 +160,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 37}
+    uvTransform: {x: 35, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -173,18 +173,18 @@ ScriptedImporter:
     - name: SleepyCloud_Frame_0
       frameIndex: 0
       cellRect:
-        x: 10
-        y: 0
-        width: 27
-        height: 25
+        x: 12
+        y: 1
+        width: 23
+        height: 26
       spriteId: 4b70d9f1765f141408fb5dd1c83efac7
     - name: SleepyCloud_Frame_1
       frameIndex: 1
       cellRect:
-        x: 11
-        y: 0
-        width: 27
-        height: 25
+        x: 13
+        y: 1
+        width: 23
+        height: 26
       spriteId: 144555970bd98714cad7df21eb696d44
     linkedCells: []
     parentIndex: -1
@@ -216,4 +216,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 48, y: 48}
+  canvasSize: {x: 48, y: 52}

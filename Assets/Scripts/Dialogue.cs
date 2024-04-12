@@ -23,6 +23,10 @@ public class Dialogue : MonoBehaviour
     private bool dialogueActivated;
     private int step;
 
+    private float readSpeed = 0.05f;
+    private int index;
+    private Coroutine displayLineCoroutine;
+
     private SpriteRenderer dialoguePrompt;
 
     private Player player;
@@ -43,8 +47,7 @@ public class Dialogue : MonoBehaviour
             //Ends cutscene if the amount of steps reaches the set amount
             if (step >= speakers.Length)
             {
-                dialogueWindow.SetActive(false);
-                player.setInCutscene(false);
+                StartCoroutine(EndCutscene());
                 step = 0;
             }
             //Continues cutscene
@@ -54,9 +57,15 @@ public class Dialogue : MonoBehaviour
                 player.setInCutscene(true);
 
                 speakerText.text = speakers[step];
-                dialogueText.text = bodyTexts[step];
                 faceSprite.sprite = faces[step];
                 faceBackground.sprite = faceBackgrounds[step];
+
+                //Set text for the current dialogue line
+                if (displayLineCoroutine != null)
+                {
+                    StopCoroutine(displayLineCoroutine);
+                }
+                displayLineCoroutine = StartCoroutine(DisplayLine(bodyTexts[step]));
 
                 step++;
             }
@@ -84,6 +93,26 @@ public class Dialogue : MonoBehaviour
             dialogueActivated = false;
             dialogueWindow.SetActive(false);
             dialoguePrompt.enabled = false;
+        }
+    }
+
+    IEnumerator EndCutscene()
+    {
+        //Tiny delay so that the player doesn't detect the attack input and instantly attack after the cutscene
+        yield return new WaitForSeconds(0.01f);
+        dialogueWindow.SetActive(false);
+        player.setInCutscene(false);
+        step = 0;
+    }
+
+    IEnumerator DisplayLine(string line)
+    {
+        dialogueText.text = null;
+
+        foreach(char letter in line.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(readSpeed);
         }
     }
 }

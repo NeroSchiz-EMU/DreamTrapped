@@ -2,7 +2,17 @@ fileFormatVersion: 2
 guid: 523cce20f8d004b088dbe6ee64efee54
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Collect
+    second: {fileID: 7400000, guid: f3083123560e1400ca1a1f67906cb6ea, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle
+    second: {fileID: 7400000, guid: 6b1fca814158e4374b17a837129638f3, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -97,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638478364318700060
+  platformSettingsDirtyTick: 638484652139615630
   textureAssetName: 
   singleSpriteImportData:
   - name: 

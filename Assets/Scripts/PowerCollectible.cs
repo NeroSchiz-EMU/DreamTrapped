@@ -33,6 +33,7 @@ public class PowerCollectible : MonoBehaviour
         if (swordPrompt.enabled && Input.GetButtonDown("Melee"))
         {
             player.setHasSword(true);
+            player.resetHealth();
             if (gameObject.name == "Sword Stone")
             {
                 mySprite.sprite = swordStoneEmpty;
@@ -43,6 +44,7 @@ public class PowerCollectible : MonoBehaviour
         if (bootsPrompt.enabled && Input.GetButtonDown("Melee"))
         {
             player.setHasBoots(true);
+            player.resetHealth();
             if (gameObject.name == "Boots Mannequin")
             {
                 mySprite.sprite = bootsMannequinEmpty;
@@ -52,6 +54,7 @@ public class PowerCollectible : MonoBehaviour
         if (gunPrompt.enabled && Input.GetButtonDown("Melee"))
         {
             player.setHasGun(true);
+            player.resetHealth();
             if (gameObject.name == "Gun Mannequin")
             {
                 mySprite.sprite = gunMannequinEmpty;
@@ -61,6 +64,7 @@ public class PowerCollectible : MonoBehaviour
         if (dashPrompt.enabled && Input.GetButtonDown("Melee"))
         {
             player.setHasDash(true);
+            player.resetHealth();
             if (gameObject.name == "Dash Mannequin")
             {
                 mySprite.sprite = dashMannequinEmpty;
