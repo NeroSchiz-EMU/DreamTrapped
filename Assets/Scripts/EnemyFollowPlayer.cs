@@ -6,7 +6,8 @@ public class EnemyFollowPlayer : MonoBehaviour
 {
     public float speed;
     public float lineOfSight;
-    private Transform player;
+    private Transform playerPos;
+    private Player player;
     
     [Header("Collision Info")]
     [SerializeField] private float groundCheckDistance;
@@ -15,18 +16,22 @@ public class EnemyFollowPlayer : MonoBehaviour
     
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        playerPos = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
     
     void Update()
     {
-        float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
-        if (distanceFromPlayer < lineOfSight)
+        //Only follow the player if they're outside of a cutscene
+        if(player.getInCutscene() == false)
         {
-           transform.position = Vector2.MoveTowards(this.transform.position, 
-                        player.position, speed * Time.deltaTime); 
+            float distanceFromPlayer = Vector2.Distance(playerPos.position, transform.position);
+            if (distanceFromPlayer < lineOfSight)
+            {
+                transform.position = Vector2.MoveTowards(this.transform.position,
+                             playerPos.position, speed * Time.deltaTime);
+            }
         }
-       
     }
     
     private void OnDrawGizmosSelected()

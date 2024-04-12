@@ -23,7 +23,7 @@ public class Dialogue : MonoBehaviour
     private bool dialogueActivated;
     private int step;
 
-    private float readSpeed = 0.05f;
+    private float readSpeed = 0.02f;
     private int index;
     private Coroutine displayLineCoroutine;
 
@@ -50,7 +50,6 @@ public class Dialogue : MonoBehaviour
                 StartCoroutine(EndCutscene());
                 step = 0;
             }
-            //Continues cutscene
             else
             {
                 dialogueWindow.SetActive(true);
@@ -76,11 +75,20 @@ public class Dialogue : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            dialogueActivated = true;
-            
             //keeps the End Door from showing the "Speak" prompt
             if(gameObject.name == "DialogueHandler")
             {
+                dialoguePrompt.enabled = true;
+
+            }
+            //keeps the sword cutscene from replaying if the player already has the sword
+            if (gameObject.name == "SwordDialogueHandler" && player.getHasSword() == true)
+            {
+                dialoguePrompt.enabled = false;
+            }
+            else
+            {
+                dialogueActivated = true;
                 dialoguePrompt.enabled = true;
             }
         }
