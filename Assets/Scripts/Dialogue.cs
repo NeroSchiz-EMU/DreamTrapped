@@ -13,6 +13,8 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private SpriteRenderer faceSprite;
     [SerializeField] private SpriteRenderer faceBackground;
+    [SerializeField] private SpriteRenderer button;
+    [SerializeField] private SpriteRenderer key;
 
     [Header("Cutscene Data")]
     [SerializeField] private string[] speakers;
@@ -26,6 +28,7 @@ public class Dialogue : MonoBehaviour
     private float readSpeed = 0.02f;
     private int index;
     private Coroutine displayLineCoroutine;
+    private bool canContinueToNextLine = true;
 
     private SpriteRenderer dialoguePrompt;
 
@@ -41,7 +44,7 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Melee") && dialogueActivated)
+        if (Input.GetButtonDown("Melee") && dialogueActivated && canContinueToNextLine)
         {
 
             //Ends cutscene if the amount of steps reaches the set amount
@@ -76,13 +79,13 @@ public class Dialogue : MonoBehaviour
         if(collision.tag == "Player")
         {
             //keeps the End Door from showing the "Speak" prompt
-            if(gameObject.name == "DialogueHandler")
+            if(gameObject.name == "DoorDialogueHandler")
             {
-                dialoguePrompt.enabled = true;
-
+                dialoguePrompt.enabled = false;
+                dialogueActivated = true;
             }
             //keeps the sword cutscene from replaying if the player already has the sword
-            if (gameObject.name == "SwordDialogueHandler" && player.getHasSword() == true)
+            else if (gameObject.name == "SwordDialogueHandler" && player.getHasSword() == true)
             {
                 dialoguePrompt.enabled = false;
             }
@@ -91,6 +94,8 @@ public class Dialogue : MonoBehaviour
                 dialogueActivated = true;
                 dialoguePrompt.enabled = true;
             }
+
+
         }
     }
 
@@ -117,10 +122,24 @@ public class Dialogue : MonoBehaviour
     {
         dialogueText.text = null;
 
-        foreach(char letter in line.ToCharArray())
+        canContinueToNextLine = false;
+        button.enabled = false;
+
+        foreach (char letter in line.ToCharArray())
         {
+            //Skipping to show full text
+            /*if (Input.GetButtonDown("Melee"))
+            {
+                dialogueText.text = bodyTexts[step];
+                break;
+            }
+            */
+
             dialogueText.text += letter;
             yield return new WaitForSeconds(readSpeed);
         }
+
+        canContinueToNextLine = true;
+        button.enabled = true;
     }
 }

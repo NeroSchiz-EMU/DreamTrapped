@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 public class Menus : MonoBehaviour
 {
     [SerializeField] private GameObject creditsText;
+    [SerializeField] private Animator ditherTransition;
     private bool creditsActive;
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Level");
+        StartCoroutine(StartGameCoroutine());
     }
 
     public void ToggleCredits()
@@ -30,6 +31,13 @@ public class Menus : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    IEnumerator StartGameCoroutine()
+    {
+        ditherTransition.SetTrigger("startGame");
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("Level");
     }
 
 }

@@ -2,7 +2,17 @@ fileFormatVersion: 2
 guid: e252a0864aa8c49cd983e606ed7e4466
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: GetOutOfBed
+    second: {fileID: 7400000, guid: 019a9d7c5bcce4e5991a1350c20fbe8e, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Hold In Bed
+    second: {fileID: 7400000, guid: 21f6b1d4baaae49b4bbc2447541919b3, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -97,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638484279954120120
+  platformSettingsDirtyTick: 638485574330125020
   textureAssetName: 
   singleSpriteImportData:
   - name: 

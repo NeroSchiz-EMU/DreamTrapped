@@ -1,0 +1,532 @@
+fileFormatVersion: 2
+guid: 849c46a6d01dd470d8e69a601fc88000
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: FadeIn
+    second: {fileID: 7400000, guid: a64a6959b2f09412cb3debd952a552a5, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 1
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638485627606831140
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: DitherTransitionBlack_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -6.448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 4
+      width: 384
+      height: 29
+    spriteID: 7f95ccb5b1e8c457e952ddba671c3a9d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 4}
+  - name: DitherTransitionBlack_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: -3.408163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1981
+      width: 384
+      height: 49
+    spriteID: 2e691afc1c5214cb9ba2a2a72d3720d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1981}
+  - name: DitherTransitionBlack_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -1.8051949}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1896
+      width: 384
+      height: 77
+    spriteID: cddd4b6fd4ae847e6adceeac0678187c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1896}
+  - name: DitherTransitionBlack_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -1.226804}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1791
+      width: 384
+      height: 97
+    spriteID: 4215c4e06c9f44dfa8948375ddf23455
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1791}
+  - name: DitherTransitionBlack_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -0.72800004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1658
+      width: 384
+      height: 125
+    spriteID: 88a129193018046739cdd5ca3fdadd0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1658}
+  - name: DitherTransitionBlack_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: -0.48965517}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1505
+      width: 384
+      height: 145
+    spriteID: a4192ac7f73b744de91fb26676dde6c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1505}
+  - name: DitherTransitionBlack_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -0.24855492}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1324
+      width: 384
+      height: 173
+    spriteID: b08f9d1075ec54d1c80a71dde0b4fc8f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1324}
+  - name: DitherTransitionBlack_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: -0.11917099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1123
+      width: 384
+      height: 193
+    spriteID: 5b77cafdf54e14af9af7cfb8c114c450
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1123}
+  - name: DitherTransitionBlack_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: -0.004651163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 900
+      width: 384
+      height: 215
+    spriteID: 0c8b7b11ac2784f26b33f4751851f422
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 900}
+  - name: DitherTransitionBlack_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 384
+      height: 216
+    spriteID: 6396c387c77b74e918cb85fa088ace70
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: DitherTransitionBlack_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 228
+      width: 384
+      height: 216
+    spriteID: e75784df0ec644c2c95c61b092441d19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 228}
+  - name: DitherTransitionBlack_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 452
+      width: 384
+      height: 216
+    spriteID: 980f4b49cc18044688a413508ccc81f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 452}
+  - name: DitherTransitionBlack_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 676
+      width: 384
+      height: 216
+    spriteID: 9de75bb587fd14fe4992b20b3558686c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 676}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 995044588
+    name: DitherTransitionBlack
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: DitherTransitionBlack_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 187
+        width: 384
+        height: 29
+      spriteId: 7f95ccb5b1e8c457e952ddba671c3a9d
+    - name: DitherTransitionBlack_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 167
+        width: 384
+        height: 49
+      spriteId: 2e691afc1c5214cb9ba2a2a72d3720d3
+    - name: DitherTransitionBlack_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: 139
+        width: 384
+        height: 77
+      spriteId: cddd4b6fd4ae847e6adceeac0678187c
+    - name: DitherTransitionBlack_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 0
+        y: 119
+        width: 384
+        height: 97
+      spriteId: 4215c4e06c9f44dfa8948375ddf23455
+    - name: DitherTransitionBlack_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: 91
+        width: 384
+        height: 125
+      spriteId: 88a129193018046739cdd5ca3fdadd0d
+    - name: DitherTransitionBlack_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 0
+        y: 71
+        width: 384
+        height: 145
+      spriteId: a4192ac7f73b744de91fb26676dde6c5
+    - name: DitherTransitionBlack_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 0
+        y: 43
+        width: 384
+        height: 173
+      spriteId: b08f9d1075ec54d1c80a71dde0b4fc8f
+    - name: DitherTransitionBlack_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: 23
+        width: 384
+        height: 193
+      spriteId: 5b77cafdf54e14af9af7cfb8c114c450
+    - name: DitherTransitionBlack_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 0
+        y: 1
+        width: 384
+        height: 215
+      spriteId: 0c8b7b11ac2784f26b33f4751851f422
+    - name: DitherTransitionBlack_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 0
+        y: 0
+        width: 384
+        height: 216
+      spriteId: 6396c387c77b74e918cb85fa088ace70
+    - name: DitherTransitionBlack_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 0
+        y: 0
+        width: 384
+        height: 216
+      spriteId: e75784df0ec644c2c95c61b092441d19
+    - name: DitherTransitionBlack_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 0
+        y: 0
+        width: 384
+        height: 216
+      spriteId: 980f4b49cc18044688a413508ccc81f2
+    - name: DitherTransitionBlack_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 0
+        y: 0
+        width: 384
+        height: 216
+      spriteId: 9de75bb587fd14fe4992b20b3558686c
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 384, y: 216}

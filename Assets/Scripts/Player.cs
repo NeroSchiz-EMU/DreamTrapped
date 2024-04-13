@@ -67,10 +67,12 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         rb = GetComponent<Rigidbody2D>();
         guns = transform.GetComponentsInChildren<Gun>();
         anim = GetComponentInChildren<Animator>();
+
+        //COMMENT IF DEBUGGING
+        transform.position = new Vector3(-34.641f, -5.714f, 0f);
     }
 
     //****************************************************************************
@@ -281,6 +283,11 @@ public class Player : MonoBehaviour
 
     //****************************************************************************
     //Get functions
+
+    public bool getFacingRight()
+    {
+        return facingRight;
+    }
 
     public float getMaxHealth()
     {

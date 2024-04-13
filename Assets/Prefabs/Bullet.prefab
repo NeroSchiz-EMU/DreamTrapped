@@ -77,6 +77,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27c1d003e8f504044a1b2a0f82b89b6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
   direction: {x: 1, y: 0}
-  speed: 8
-  velocity: {x: 0, y: 0}
+  sprite: {fileID: 4778076212885679603}
+--- !u!212 &4778076212885679603 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3626916397498700004, guid: be52d2feb2f224d6e8bf120de3eb962f, type: 3}
+  m_PrefabInstance: {fileID: 8077846119586495767}
+  m_PrefabAsset: {fileID: 0}

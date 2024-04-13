@@ -5,18 +5,31 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public float speed = 10;
     public Vector2 direction = new Vector2(0, 0);
-    public float speed = 2;
+    private Vector2 velocity;
 
-    public Vector2 velocity;
+    private Player player;
+    [SerializeField] private SpriteRenderer sprite;
+    private bool facingRightWhenFired;
+
     void Start()
     {
+        player = GameObject.Find("Player").GetComponent<Player>();
         Destroy(gameObject, 3);
+
+        if (player.getFacingRight()) facingRightWhenFired = true;
+        else if(player.getFacingRight() == false) facingRightWhenFired = false;
     }
     
     void Update()
     {
-        velocity = direction * speed;
+        if (facingRightWhenFired) velocity = direction * speed;
+        else if (!facingRightWhenFired)
+        {
+            velocity = -direction * speed;
+            sprite.flipX = true;
+        }
     }
 
     private void FixedUpdate()
