@@ -302,6 +302,46 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
+  - name: Escape-button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 31
+      width: 23
+      height: 20
+    spriteID: d9dba85065367441dac0b4d9e1dd0bf4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Escape-key
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 99
+      y: 31
+      width: 23
+      height: 20
+    spriteID: a367a7dec56f3471aa532b42cfbbc3b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
     guid: -1094466486
@@ -315,7 +355,7 @@ ScriptedImporter:
       cellRect:
         x: 1
         y: 1
-        width: 89
+        width: 118
         height: 71
       spriteId: a50a9c76dcaab409e93976d1d8b00c7c
     linkedCells: []
@@ -348,4 +388,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 95, y: 73}
+  canvasSize: {x: 146, y: 73}

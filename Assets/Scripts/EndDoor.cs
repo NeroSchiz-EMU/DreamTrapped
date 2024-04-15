@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndDoor : MonoBehaviour
 {
@@ -12,18 +13,26 @@ public class EndDoor : MonoBehaviour
     private SpriteRenderer core;
 
     private SpriteRenderer doorPrompt;
+    private SpriteRenderer escapePrompt;
 
     [SerializeField] private Sprite[] coreSprites;
     [SerializeField] private Sprite doorFull;
 
     [SerializeField] private Player player;
     [SerializeField] private Animator animator;
+    [SerializeField] private Animator fadeToWhite; 
 
-    private int abilityAmount;
+    [SerializeField] private int abilityAmount;
     private bool swordCounted;
     private bool bootsCounted;
     private bool gunCounted;
     private bool dashCounted;
+
+    private GameObject doorDialogueHandler;
+    [SerializeField] private GameObject doorEndingDialogueHandler;
+    private Dialogue dialogueScript;
+    private bool doorOpened;
+    private bool doorOpening;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +45,10 @@ public class EndDoor : MonoBehaviour
         core = transform.Find("Core").GetComponent<SpriteRenderer>();
 
         doorPrompt = GameObject.Find("Door Prompt").GetComponent<SpriteRenderer>();
+        escapePrompt = GameObject.Find("Escape Prompt").GetComponent<SpriteRenderer>();
+
+        doorDialogueHandler = GameObject.Find("DoorDialogueHandler");
+        dialogueScript = doorEndingDialogueHandler.GetComponent<Dialogue>();
     }
 
     // Update is called once per frame
@@ -97,12 +110,32 @@ public class EndDoor : MonoBehaviour
             dash.enabled = false;
             core.enabled = false;
 
+            doorDialogueHandler.SetActive(false);
+            if(!doorOpening) doorEndingDialogueHandler.SetActive(true);
+
             door.sprite = doorFull;
         }
 
+        if (dialogueScript.getDoorUnlockCutsceneStarted())
+        {
+            doorOpening = true;
+            doorPrompt.enabled = false;
+            doorEndingDialogueHandler.SetActive(false);
+            animator.enabled = true;
+            animator.SetTrigger("unlocked");
+            dialogueScript.setDoorUnlockCutsceneStarted(false);
+            StartCoroutine(DoorOpen());
+        }
+
+        if (doorOpened && Input.GetButtonDown("Melee"))
+        {
+            StartCoroutine(FadeToEnding());
+        }
+
+
     }
 
-    //Enable prompt
+    //Enable "???" prompt
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
@@ -119,6 +152,20 @@ public class EndDoor : MonoBehaviour
         {
             doorPrompt.enabled = false;
         }
+    }
+
+    IEnumerator DoorOpen()
+    {
+        yield return new WaitForSeconds(9);
+        doorOpened = true;
+        escapePrompt.enabled = true;
+    }
+
+    IEnumerator FadeToEnding()
+    {
+        fadeToWhite.enabled = true;
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("Ending");
     }
 
 }

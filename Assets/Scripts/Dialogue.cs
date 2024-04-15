@@ -25,6 +25,7 @@ public class Dialogue : MonoBehaviour
     private bool dialogueActivated;
     private int step;
     private bool openingCutsceneStarted;
+    private bool doorUnlockCutsceneStarted;
 
     private float readSpeed = 0.02f;
     private int index;
@@ -41,6 +42,7 @@ public class Dialogue : MonoBehaviour
         dialoguePrompt = GameObject.Find("Dialogue Prompt").GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player").GetComponent<Player>();
 
+        //Automatically start opening cutscene when its DialogueHandler is active
         if (gameObject.name == "OpeningDialogueHandler") dialogueActivated = true;
     }
 
@@ -59,13 +61,20 @@ public class Dialogue : MonoBehaviour
                 StartCoroutine(EndCutscene());
                 step = 0;
 
-                //Disables opening cutscene from replaying again
-                if(gameObject.name == "OpeningDialogueHandler")
+                //Disables specified cutscene from replaying again
+                if(gameObject.name == "OpeningDialogueHandler" ||
+                    gameObject.name == "DoorEndingDialogueHandler")
                 {
                     player.setInCutscene(false);
                     dialogueActivated = false;
                     gameObject.SetActive(false);
                 }
+                if(gameObject.name == "DoorEndingDialogueHandler")
+                {
+                    player.setInCutscene(true);
+                    doorUnlockCutsceneStarted = true;
+                }
+                
             }
             else
             {
@@ -95,6 +104,7 @@ public class Dialogue : MonoBehaviour
 
             //keeps the Opening and End Door from showing the "Speak" prompt
             if(gameObject.name == "DoorDialogueHandler" ||
+                gameObject.name == "DoorEndingDialogueHandler" ||
                 gameObject.name == "OpeningDialogueHandler")
             {
                 dialoguePrompt.enabled = false;
@@ -120,7 +130,12 @@ public class Dialogue : MonoBehaviour
         if(collision.tag == "Player")
         {
             dialogueActivated = false;
-            dialogueWindow.SetActive(false);
+
+            if (dialogueWindow != null)
+            {
+                dialogueWindow.SetActive(false);
+            }
+
             dialoguePrompt.enabled = false;
         }
     }
@@ -158,5 +173,16 @@ public class Dialogue : MonoBehaviour
 
         canContinueToNextLine = true;
         button.enabled = true;
+    }
+
+    public bool getDoorUnlockCutsceneStarted()
+    {
+        return doorUnlockCutsceneStarted;
+    }
+
+    public bool setDoorUnlockCutsceneStarted(bool b)
+    {
+        doorUnlockCutsceneStarted = b;
+        return doorUnlockCutsceneStarted;
     }
 }

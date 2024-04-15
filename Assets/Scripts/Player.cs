@@ -71,7 +71,7 @@ public class Player : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
 
         //COMMENT IF DEBUGGING
-        transform.position = new Vector3(-34.641f, -5.714f, 0f);
+        //transform.position = new Vector3(-34.641f, -5.714f, 0f);
     }
 
     //****************************************************************************
