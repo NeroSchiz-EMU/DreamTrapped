@@ -7,12 +7,11 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     
-    
     private Rigidbody2D rb;
     private Animator anim;
 
     private bool inCutscene;
-
+   
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce;
 
@@ -72,7 +71,7 @@ public class Player : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
 
         //COMMENT IF DEBUGGING
-        transform.position = new Vector3(-34.641f, -5.714f, 0f);
+        // transform.position = new Vector3(-34.641f, -5.714f, 0f);
     }
 
     //****************************************************************************
