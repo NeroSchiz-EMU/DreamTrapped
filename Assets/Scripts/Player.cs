@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    
     private Rigidbody2D rb;
     private Animator anim;
 
@@ -47,7 +46,6 @@ public class Player : MonoBehaviour
 
     [Header("Collision Info")]
     [SerializeField] private float groundCheckDistance;
-
     [SerializeField] private LayerMask whatIsGround;
     private bool isGrounded;
 
@@ -59,23 +57,23 @@ public class Player : MonoBehaviour
 
     [Header("Health Info")]
     [SerializeField] private float maxHealth = 100f;
-
     [SerializeField] private float health = 0;
 
+    
     //****************************************************************************
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        guns = transform.GetComponentsInChildren<Gun>();
-        anim = GetComponentInChildren<Animator>();
-
+         rb = GetComponent<Rigidbody2D>();
+         anim = GetComponentInChildren<Animator>();
+         guns = transform.GetComponentsInChildren<Gun>();
+         
         //COMMENT IF DEBUGGING
-        //transform.position = new Vector3(-34.641f, -5.714f, 0f);
+        // transform.position = new Vector3(-34.641f, -5.714f, 0f);
     }
-
     //****************************************************************************
-    //Update is called once per frame
+
+    
     void Update()
     {
         Movement();
@@ -242,8 +240,6 @@ public class Player : MonoBehaviour
 
     private void Flip()
     {
-        // facingDir = facingDir * -1;
-        // facingRight = !facingRight;
         facingDir = -facingDir;
         facingRight = !facingRight;
         anim.transform.Rotate(0f, 180f, 0f);
@@ -361,6 +357,13 @@ public class Player : MonoBehaviour
 }
 
 
+
+
+// try this for ground check option
+// --------------------------------
+// protected bool isGrounded;
+// public float groundCheckDistance;
+// public LayerMask whatIsGround;
 
 
 
