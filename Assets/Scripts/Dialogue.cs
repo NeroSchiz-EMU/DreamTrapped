@@ -24,6 +24,7 @@ public class Dialogue : MonoBehaviour
 
     private bool dialogueActivated;
     private int step;
+    private bool openingCutsceneStarted;
 
     private float readSpeed = 0.02f;
     private int index;
@@ -39,19 +40,32 @@ public class Dialogue : MonoBehaviour
     {
         dialoguePrompt = GameObject.Find("Dialogue Prompt").GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player").GetComponent<Player>();
+
+        if (gameObject.name == "OpeningDialogueHandler") dialogueActivated = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Melee") && dialogueActivated && canContinueToNextLine)
+        //If input for dialogue is given, OR it's the opening cutscene which starts automatically
+        if (Input.GetButtonDown("Melee") && dialogueActivated && canContinueToNextLine ||
+            gameObject.name == "OpeningDialogueHandler" && !openingCutsceneStarted)
         {
+            openingCutsceneStarted = true;
 
             //Ends cutscene if the amount of steps reaches the set amount
             if (step >= speakers.Length)
             {
                 StartCoroutine(EndCutscene());
                 step = 0;
+
+                //Disables opening cutscene from replaying again
+                if(gameObject.name == "OpeningDialogueHandler")
+                {
+                    player.setInCutscene(false);
+                    dialogueActivated = false;
+                    gameObject.SetActive(false);
+                }
             }
             else
             {
@@ -78,8 +92,10 @@ public class Dialogue : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            //keeps the End Door from showing the "Speak" prompt
-            if(gameObject.name == "DoorDialogueHandler")
+
+            //keeps the Opening and End Door from showing the "Speak" prompt
+            if(gameObject.name == "DoorDialogueHandler" ||
+                gameObject.name == "OpeningDialogueHandler")
             {
                 dialoguePrompt.enabled = false;
                 dialogueActivated = true;
@@ -108,6 +124,7 @@ public class Dialogue : MonoBehaviour
             dialoguePrompt.enabled = false;
         }
     }
+
 
     IEnumerator EndCutscene()
     {
