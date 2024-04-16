@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
     private bool facingRight = true;
 
     [Header("Collision Info")]
+    [SerializeField] protected Transform groundCheck;
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask whatIsGround;
     private bool isGrounded;
@@ -124,7 +125,7 @@ public class Player : MonoBehaviour
 
     private void CollisionChecks()
     {
-        isGrounded = Physics2D.Raycast(transform.position,
+        isGrounded = Physics2D.Raycast(groundCheck.position,
             Vector2.down, groundCheckDistance, whatIsGround);
     }
 
@@ -255,8 +256,10 @@ public class Player : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawLine(transform.position, 
-            new Vector3(transform.position.x, transform.position.y - groundCheckDistance));
+        Gizmos.DrawLine(groundCheck.position, 
+            new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
+        // Gizmos.DrawLine(transform.position, 
+        //     new Vector3(transform.position.x, transform.position.y - groundCheckDistance));
     }
 
     /*private void OnTriggerEnter2D(Collider2D collision)
