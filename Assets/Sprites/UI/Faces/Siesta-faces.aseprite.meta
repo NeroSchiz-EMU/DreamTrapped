@@ -324,15 +324,15 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: Purple-faces_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 3700
-      width: 2036
-      height: 1848
+      y: 3332
+      width: 1832
+      height: 1660
     spriteID: 13ff55ed17e55417faf49ce0660e0ee1
     spriteBone: []
     spriteOutline: []
@@ -344,15 +344,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Purple-faces_1
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2048
-      y: 3700
-      width: 2036
-      height: 1848
+      x: 1842
+      y: 3332
+      width: 1832
+      height: 1660
     spriteID: 4901bd0b51b214d91a2545ed42c5de3d
     spriteBone: []
     spriteOutline: []
@@ -364,15 +364,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Purple-faces_2
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 1852
-      width: 2036
-      height: 1844
+      y: 1668
+      width: 1832
+      height: 1658
     spriteID: dbbb111a98ed049229c7fbcfc459ef8b
     spriteBone: []
     spriteOutline: []
@@ -384,15 +384,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Purple-faces_3
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2048
-      y: 1852
-      width: 2036
-      height: 1844
+      x: 1842
+      y: 1668
+      width: 1832
+      height: 1658
     spriteID: fc9817552eaf44a24a5bc64db2ff545e
     spriteBone: []
     spriteOutline: []
@@ -404,15 +404,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Purple-faces_4
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4092
-      y: 1852
-      width: 2036
-      height: 1844
+      x: 3682
+      y: 1668
+      width: 1832
+      height: 1658
     spriteID: af0d60d10e1f048b2abfb949c979c646
     spriteBone: []
     spriteOutline: []
@@ -424,15 +424,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Purple-faces_5
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 6136
-      y: 1852
-      width: 2036
-      height: 1844
+      x: 5520
+      y: 1668
+      width: 1832
+      height: 1658
     spriteID: 6959be8f6be6c439babb70f45080431c
     spriteBone: []
     spriteOutline: []
@@ -444,15 +444,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Purple-faces_6
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 0
-      width: 2036
-      height: 1848
+      y: 2
+      width: 1832
+      height: 1660
     spriteID: 9dc2d1966f8c04c999b5b589c2c579fc
     spriteBone: []
     spriteOutline: []
@@ -464,15 +464,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Purple-faces_7
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2048
-      y: 0
-      width: 2036
-      height: 1848
+      x: 1842
+      y: 2
+      width: 1832
+      height: 1660
     spriteID: 4c2c353c023e140b7989e7caadb3e53a
     spriteBone: []
     spriteOutline: []
@@ -484,15 +484,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Purple-faces_8
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4092
-      y: 0
-      width: 2036
-      height: 1848
+      x: 3682
+      y: 2
+      width: 1832
+      height: 1660
     spriteID: 60d8cc0e38a5d4b58b8e9522be823b75
     spriteBone: []
     spriteOutline: []
@@ -504,15 +504,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Purple-faces_9
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 6136
-      y: 0
-      width: 2036
-      height: 1848
+      x: 5520
+      y: 2
+      width: 1832
+      height: 1660
     spriteID: 6194f16ac2a604fae81c11a057d34555
     spriteBone: []
     spriteOutline: []
@@ -533,82 +533,82 @@ ScriptedImporter:
     - name: Siesta-faces_Frame_0
       frameIndex: 0
       cellRect:
-        x: 27
-        y: 0
-        width: 2091
-        height: 1934
+        x: 24
+        y: 1
+        width: 1881
+        height: 1740
       spriteId: 61a251713566b4359952b2b5c994318f
     - name: Siesta-faces_Frame_1
       frameIndex: 1
       cellRect:
-        x: 27
-        y: 0
-        width: 2091
-        height: 1934
+        x: 24
+        y: 1
+        width: 1881
+        height: 1740
       spriteId: 78cc4350f7f904de18a332f7e0ed48c6
     - name: Siesta-faces_Frame_2
       frameIndex: 2
       cellRect:
-        x: 27
-        y: 0
-        width: 2091
-        height: 1934
+        x: 24
+        y: 1
+        width: 1881
+        height: 1740
       spriteId: 7fc99e8c5710547bcafd1f6a74b134e5
     - name: Siesta-faces_Frame_3
       frameIndex: 3
       cellRect:
-        x: 27
-        y: 0
-        width: 2091
-        height: 1934
+        x: 24
+        y: 1
+        width: 1881
+        height: 1740
       spriteId: 27c76029a0d90445ba250a8c2a632638
     - name: Siesta-faces_Frame_4
       frameIndex: 4
       cellRect:
-        x: 27
-        y: 0
-        width: 2091
-        height: 1934
+        x: 24
+        y: 1
+        width: 1881
+        height: 1740
       spriteId: 701ff373d528042f2bfe6a9006c96b32
     - name: Siesta-faces_Frame_5
       frameIndex: 5
       cellRect:
-        x: 27
-        y: 0
-        width: 2091
-        height: 1934
+        x: 24
+        y: 1
+        width: 1881
+        height: 1740
       spriteId: 053843d34244c4244b96ac21ed22062e
     - name: Siesta-faces_Frame_6
       frameIndex: 6
       cellRect:
-        x: 27
-        y: 0
-        width: 2091
-        height: 1934
+        x: 24
+        y: 1
+        width: 1881
+        height: 1740
       spriteId: 37a6e8f64f6ff49e39cbe74f21f9e001
     - name: Siesta-faces_Frame_7
       frameIndex: 7
       cellRect:
-        x: 27
-        y: 0
-        width: 2091
-        height: 1934
+        x: 24
+        y: 1
+        width: 1881
+        height: 1740
       spriteId: 20f6664b7b3c84d6da66ef77027d6ea9
     - name: Siesta-faces_Frame_8
       frameIndex: 8
       cellRect:
-        x: 27
-        y: 0
-        width: 2091
-        height: 1934
+        x: 24
+        y: 1
+        width: 1881
+        height: 1740
       spriteId: 3b084916baf884c6d8be79d962f01b41
     - name: Siesta-faces_Frame_9
       frameIndex: 9
       cellRect:
-        x: 27
-        y: 0
-        width: 2091
-        height: 1934
+        x: 24
+        y: 1
+        width: 1881
+        height: 1740
       spriteId: 2645ab2841d3040d3be80eee0979a292
     linkedCells: []
     parentIndex: -1
@@ -640,4 +640,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 2145, y: 1999}
+  canvasSize: {x: 1930, y: 1799}

@@ -1,0 +1,1227 @@
+fileFormatVersion: 2
+guid: 9d7165289a59d4fafbbe86fa98544055
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638488155732447010
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: DreamerBedReal_Frame_0
+    originalName: 
+    pivot: {x: 0.53, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 187
+      y: 4
+      width: 50
+      height: 32
+    spriteID: 28e4f2555551a454aa288f38d5e0b56b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 187, y: 4}
+  - name: DreamerBedReal_Frame_1
+    originalName: 
+    pivot: {x: 0.53, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 187
+      y: 44
+      width: 50
+      height: 32
+    spriteID: 0a81f4a2ff55b49578ae6970495b77b9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 187, y: 44}
+  - name: DreamerBedReal_Frame_2
+    originalName: 
+    pivot: {x: 0.53, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 187
+      y: 84
+      width: 50
+      height: 32
+    spriteID: dc161304de5d64e7abc271336ca8dfdb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 187, y: 84}
+  - name: DreamerBedReal_Frame_3
+    originalName: 
+    pivot: {x: 0.53, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 187
+      y: 124
+      width: 50
+      height: 32
+    spriteID: 0e1dd596e0ad54696b1d853eae64635b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 187, y: 124}
+  - name: DreamerBedReal_Frame_4
+    originalName: 
+    pivot: {x: 0.53, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 187
+      y: 164
+      width: 50
+      height: 32
+    spriteID: c56014873336244c69f4dd428c14469a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 187, y: 164}
+  - name: DreamerBedReal_Frame_5
+    originalName: 
+    pivot: {x: 0.53, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 187
+      y: 204
+      width: 50
+      height: 32
+    spriteID: bd9af773138184967b75ca869d78327b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 187, y: 204}
+  - name: DreamerBedReal_Frame_6
+    originalName: 
+    pivot: {x: 0.53, y: -0.027027028}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 326
+      width: 50
+      height: 37
+    spriteID: 2fe76b9524f96408ba3f12482e0d67eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 326}
+  - name: DreamerBedReal_Frame_7
+    originalName: 
+    pivot: {x: 0.53, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 280
+      width: 50
+      height: 38
+    spriteID: ee9fd79495d234d81962d9f2bf6cb703
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 280}
+  - name: DreamerBedReal_Frame_8
+    originalName: 
+    pivot: {x: 0.53, y: -0.029411765}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 371
+      width: 50
+      height: 34
+    spriteID: 6f9fe7d520b45406abb31c1d4adf4f12
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 371}
+  - name: DreamerBedReal_Frame_9
+    originalName: 
+    pivot: {x: 0.50961536, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 453
+      width: 52
+      height: 32
+    spriteID: bda91dccbeeb14f4ca990f2f89049db5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 453}
+  - name: DreamerBedReal_Frame_10
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 413
+      width: 53
+      height: 32
+    spriteID: 7ba271ab56ab94910858dbd14ea072c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 413}
+  - name: DreamerBedReal_Frame_11
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 145
+      width: 53
+      height: 38
+    spriteID: 18e353290af1048d08e74b7150b3233b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 145}
+  - name: DreamerBedReal_Frame_12
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 191
+      width: 53
+      height: 38
+    spriteID: b8b222e3e71bc49309dfc3be7139ed97
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 191}
+  - name: DreamerBedReal_Frame_13
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 237
+      width: 53
+      height: 38
+    spriteID: daa8df2b465b74b4eb5330e0bf6d1a2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 237}
+  - name: DreamerBedReal_Frame_14
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 283
+      width: 53
+      height: 38
+    spriteID: 3f1b88290c5ef4b229cdfa5fac2a718b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 283}
+  - name: DreamerBedReal_Frame_15
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 329
+      width: 53
+      height: 38
+    spriteID: c4cd85409ba104618b2bc1d009c4cc20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 329}
+  - name: DreamerBedReal_Frame_16
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 375
+      width: 53
+      height: 38
+    spriteID: 230d89745424c414eae5404a12cdbe57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 375}
+  - name: DreamerBedReal_Frame_17
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 421
+      width: 53
+      height: 38
+    spriteID: b8c76abdebf6b4ddfaa7d91fa89dfca7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 421}
+  - name: DreamerBedReal_Frame_18
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 467
+      width: 53
+      height: 38
+    spriteID: 42bb560638c3e46aaa33f321dd3ab720
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 467}
+  - name: DreamerBedReal_Frame_19
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.025641026}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 445
+      width: 53
+      height: 39
+    spriteID: 5006b01d18360415d8ce6d42d5047b75
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 445}
+  - name: DreamerBedReal_Frame_20
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.025641026}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 4
+      width: 53
+      height: 39
+    spriteID: 9322447d3934043aa823ec3282541705
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 4}
+  - name: DreamerBedReal_Frame_21
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.024390245}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 53
+      height: 41
+    spriteID: 1560f1c3a6cfd4a0097d8e1189ff0cb2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: DreamerBedReal_Frame_22
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.024390245}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 53
+      width: 53
+      height: 41
+    spriteID: 81fcb0bbc5c574ae4b21caaa441de255
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 53}
+  - name: DreamerBedReal_Frame_23
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.024390245}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 102
+      width: 53
+      height: 41
+    spriteID: 7db0ab737e5a041668002c31b8e10d1e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 102}
+  - name: DreamerBedReal_Frame_24
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.024390245}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 151
+      width: 53
+      height: 41
+    spriteID: 051f520aa683d4b72b7b90f292a29ddb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 151}
+  - name: DreamerBedReal_Frame_25
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.024390245}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 200
+      width: 53
+      height: 41
+    spriteID: c8264ba3a4c504b3faf99c717b87bb26
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 200}
+  - name: DreamerBedReal_Frame_26
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.024390245}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 249
+      width: 53
+      height: 41
+    spriteID: 7045b9472ab584a3fb28f6c2573bff72
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 249}
+  - name: DreamerBedReal_Frame_27
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.024390245}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 298
+      width: 53
+      height: 41
+    spriteID: 617140e95d21f4891a55e53b8a740e2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 298}
+  - name: DreamerBedReal_Frame_28
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.024390245}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 347
+      width: 53
+      height: 41
+    spriteID: 44fea650db0034643846c682e3e7a092
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 347}
+  - name: DreamerBedReal_Frame_29
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.024390245}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 396
+      width: 53
+      height: 41
+    spriteID: bd3c5756ee6c347ab9fa42907af4b429
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 396}
+  - name: DreamerBedReal_Frame_30
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.025641026}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 51
+      width: 53
+      height: 39
+    spriteID: 87fbc26bddd5b4c1c88fd8c818497db4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 51}
+  - name: DreamerBedReal_Frame_31
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.025641026}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 98
+      width: 53
+      height: 39
+    spriteID: 33fda4b93e85b47f6b873ac237512ca1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 98}
+  - name: DreamerBedReal_Frame_32
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 4
+      width: 53
+      height: 38
+    spriteID: 3ccc2cb37e1d649bb93d59d2f270b40a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 4}
+  - name: DreamerBedReal_Frame_33
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 50
+      width: 53
+      height: 38
+    spriteID: 8f0e0a1dd7dc34cf68ddffb55f0e7079
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 50}
+  - name: DreamerBedReal_Frame_34
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 96
+      width: 53
+      height: 38
+    spriteID: 321cbf16c35fc4c1782ddd2537756e0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 96}
+  - name: DreamerBedReal_Frame_35
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 142
+      width: 53
+      height: 38
+    spriteID: 528fbfd25d6094780b180cb97a1747c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 142}
+  - name: DreamerBedReal_Frame_36
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 188
+      width: 53
+      height: 38
+    spriteID: cc02c10a3488444a9892744743102348
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 188}
+  - name: DreamerBedReal_Frame_37
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.02631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 234
+      width: 53
+      height: 38
+    spriteID: 8e9c2c5f5aa364abf8b9405c76d6527b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 234}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -913045819
+    name: DreamerBedReal
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: DreamerBedReal_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 1
+        y: 1
+        width: 50
+        height: 32
+      spriteId: 28e4f2555551a454aa288f38d5e0b56b
+    - name: DreamerBedReal_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 1
+        y: 1
+        width: 50
+        height: 32
+      spriteId: 0a81f4a2ff55b49578ae6970495b77b9
+    - name: DreamerBedReal_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 1
+        y: 1
+        width: 50
+        height: 32
+      spriteId: dc161304de5d64e7abc271336ca8dfdb
+    - name: DreamerBedReal_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 1
+        y: 1
+        width: 50
+        height: 32
+      spriteId: 0e1dd596e0ad54696b1d853eae64635b
+    - name: DreamerBedReal_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 1
+        y: 1
+        width: 50
+        height: 32
+      spriteId: c56014873336244c69f4dd428c14469a
+    - name: DreamerBedReal_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 1
+        y: 1
+        width: 50
+        height: 32
+      spriteId: bd9af773138184967b75ca869d78327b
+    - name: DreamerBedReal_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 1
+        y: 1
+        width: 50
+        height: 37
+      spriteId: 2fe76b9524f96408ba3f12482e0d67eb
+    - name: DreamerBedReal_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 1
+        y: 1
+        width: 50
+        height: 38
+      spriteId: ee9fd79495d234d81962d9f2bf6cb703
+    - name: DreamerBedReal_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 1
+        y: 1
+        width: 50
+        height: 34
+      spriteId: 6f9fe7d520b45406abb31c1d4adf4f12
+    - name: DreamerBedReal_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 1
+        y: 1
+        width: 52
+        height: 32
+      spriteId: bda91dccbeeb14f4ca990f2f89049db5
+    - name: DreamerBedReal_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 32
+      spriteId: 7ba271ab56ab94910858dbd14ea072c7
+    - name: DreamerBedReal_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 38
+      spriteId: 18e353290af1048d08e74b7150b3233b
+    - name: DreamerBedReal_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 38
+      spriteId: b8b222e3e71bc49309dfc3be7139ed97
+    - name: DreamerBedReal_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 38
+      spriteId: daa8df2b465b74b4eb5330e0bf6d1a2e
+    - name: DreamerBedReal_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 38
+      spriteId: 3f1b88290c5ef4b229cdfa5fac2a718b
+    - name: DreamerBedReal_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 38
+      spriteId: c4cd85409ba104618b2bc1d009c4cc20
+    - name: DreamerBedReal_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 38
+      spriteId: 230d89745424c414eae5404a12cdbe57
+    - name: DreamerBedReal_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 38
+      spriteId: b8c76abdebf6b4ddfaa7d91fa89dfca7
+    - name: DreamerBedReal_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 38
+      spriteId: 42bb560638c3e46aaa33f321dd3ab720
+    - name: DreamerBedReal_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 39
+      spriteId: 5006b01d18360415d8ce6d42d5047b75
+    - name: DreamerBedReal_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 39
+      spriteId: 9322447d3934043aa823ec3282541705
+    - name: DreamerBedReal_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 41
+      spriteId: 1560f1c3a6cfd4a0097d8e1189ff0cb2
+    - name: DreamerBedReal_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 41
+      spriteId: 81fcb0bbc5c574ae4b21caaa441de255
+    - name: DreamerBedReal_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 41
+      spriteId: 7db0ab737e5a041668002c31b8e10d1e
+    - name: DreamerBedReal_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 41
+      spriteId: 051f520aa683d4b72b7b90f292a29ddb
+    - name: DreamerBedReal_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 41
+      spriteId: c8264ba3a4c504b3faf99c717b87bb26
+    - name: DreamerBedReal_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 41
+      spriteId: 7045b9472ab584a3fb28f6c2573bff72
+    - name: DreamerBedReal_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 41
+      spriteId: 617140e95d21f4891a55e53b8a740e2e
+    - name: DreamerBedReal_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 41
+      spriteId: 44fea650db0034643846c682e3e7a092
+    - name: DreamerBedReal_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 41
+      spriteId: bd3c5756ee6c347ab9fa42907af4b429
+    - name: DreamerBedReal_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 39
+      spriteId: 87fbc26bddd5b4c1c88fd8c818497db4
+    - name: DreamerBedReal_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 39
+      spriteId: 33fda4b93e85b47f6b873ac237512ca1
+    - name: DreamerBedReal_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 38
+      spriteId: 3ccc2cb37e1d649bb93d59d2f270b40a
+    - name: DreamerBedReal_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 38
+      spriteId: 8f0e0a1dd7dc34cf68ddffb55f0e7079
+    - name: DreamerBedReal_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 38
+      spriteId: 321cbf16c35fc4c1782ddd2537756e0d
+    - name: DreamerBedReal_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 38
+      spriteId: 528fbfd25d6094780b180cb97a1747c9
+    - name: DreamerBedReal_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 38
+      spriteId: cc02c10a3488444a9892744743102348
+    - name: DreamerBedReal_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 1
+        y: 1
+        width: 53
+        height: 38
+      spriteId: 8e9c2c5f5aa364abf8b9405c76d6527b
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 55, y: 45}

@@ -105,7 +105,7 @@ TextureImporter:
         width: 330
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -118,7 +118,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dialogue Windows_1
+      name: Dreamer-window
       rect:
         serializedVersion: 2
         x: 10
@@ -126,7 +126,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,7 +139,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dialogue Windows_2
+      name: Teddy-window
       rect:
         serializedVersion: 2
         x: 89
@@ -147,7 +147,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,7 +160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dialogue Windows_3
+      name: Drowsy-window
       rect:
         serializedVersion: 2
         x: 168
@@ -168,7 +168,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,7 +181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dialogue Windows_4
+      name: Siesta-window
       rect:
         serializedVersion: 2
         x: 247
@@ -189,7 +189,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,10 +202,31 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dialogue Windows_5
+      name: REM-window
       rect:
         serializedVersion: 2
         x: 10
+        y: 5
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d031e424eeba4da18f76ece01013d1a
+      internalID: 1114146028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moon-window
+      rect:
+        serializedVersion: 2
+        x: 89
         y: 5
         width: 74
         height: 74
@@ -216,8 +237,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d031e424eeba4da18f76ece01013d1a
-      internalID: 1114146028
+      spriteID: 6c2540bec55dd499ca66a238e3b20fdd
+      internalID: 1130133488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catnap-window
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 5
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7ce3cfb911843a6ac3419c350d166f
+      internalID: -333030228
       vertices: []
       indices: 
       edges: []
@@ -233,12 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Catnap-window: -333030228
       Dialogue Windows_0: 543814398
-      Dialogue Windows_1: -1965962794
-      Dialogue Windows_2: -79214688
-      Dialogue Windows_3: 255788006
-      Dialogue Windows_4: 858188977
-      Dialogue Windows_5: 1114146028
+      Dreamer-window: -1965962794
+      Drowsy-window: 255788006
+      Moon-window: 1130133488
+      REM-window: 1114146028
+      Siesta-window: 858188977
+      Teddy-window: -79214688
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

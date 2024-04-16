@@ -27,6 +27,10 @@ public class Dialogue : MonoBehaviour
     private bool openingCutsceneStarted;
     private bool doorUnlockCutsceneStarted;
 
+    [SerializeField] private Animator explosion;
+    [SerializeField] private SpriteRenderer explosionSprite;
+    [SerializeField] private AudioSource explosionSound;
+
     private float readSpeed = 0.02f;
     private int index;
     private Coroutine displayLineCoroutine;
@@ -54,6 +58,16 @@ public class Dialogue : MonoBehaviour
             gameObject.name == "OpeningDialogueHandler" && !openingCutsceneStarted)
         {
             openingCutsceneStarted = true;
+
+            if(gameObject.name == "ExplosionDialogueHandler" && step == 3)
+            {
+                explosionSprite.enabled = true;
+                explosion.enabled = true;
+                explosion.Rebind();
+                explosion.Update(0f);
+                explosionSound.Play();
+                StartCoroutine(StopExplosion());
+            }
 
             //Ends cutscene if the amount of steps reaches the set amount
             if (step >= speakers.Length)
@@ -110,8 +124,11 @@ public class Dialogue : MonoBehaviour
                 dialoguePrompt.enabled = false;
                 dialogueActivated = true;
             }
-            //keeps the sword cutscene from replaying if the player already has the sword
-            else if (gameObject.name == "SwordDialogueHandler" && player.getHasSword() == true)
+            //keeps the power cutscenes from replaying if the player already has the respective power
+            else if ((gameObject.name == "SwordDialogueHandler" && player.getHasSword() == true) ||
+                (gameObject.name == "GunDialogueHandler" && player.getHasGun() == true) ||
+                (gameObject.name == "BootsDialogueHandler" && player.getHasBoots() == true) ||
+                (gameObject.name == "DashDialogueHandler" && player.getHasDash() == true))
             {
                 dialoguePrompt.enabled = false;
             }
@@ -173,6 +190,13 @@ public class Dialogue : MonoBehaviour
 
         canContinueToNextLine = true;
         button.enabled = true;
+    }
+
+    IEnumerator StopExplosion()
+    {
+        yield return new WaitForSeconds(2);
+        explosion.enabled = false;
+        explosionSprite.enabled = false;
     }
 
     public bool getDoorUnlockCutsceneStarted()

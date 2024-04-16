@@ -324,8 +324,8 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: Moon-faces_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -344,8 +344,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Moon-faces_1
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -364,8 +364,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Moon-faces_2
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -384,8 +384,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Moon-faces_3
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -404,8 +404,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Moon-faces_4
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -424,8 +424,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Moon-faces_5
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -444,8 +444,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Moon-faces_6
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -464,8 +464,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Moon-faces_7
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -484,8 +484,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Moon-faces_8
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -504,8 +504,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Moon-faces_9
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
