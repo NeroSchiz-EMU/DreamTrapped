@@ -13,7 +13,7 @@ public class EndDoor : MonoBehaviour
     private SpriteRenderer core;
 
     private SpriteRenderer doorPrompt;
-    private SpriteRenderer escapePrompt;
+    [SerializeField] private SpriteRenderer escapePrompt;
 
     [SerializeField] private Sprite[] coreSprites;
     [SerializeField] private Sprite doorFull;
@@ -30,7 +30,7 @@ public class EndDoor : MonoBehaviour
 
     private GameObject doorDialogueHandler;
     [SerializeField] private GameObject doorEndingDialogueHandler;
-    private Dialogue dialogueScript;
+    [SerializeField] private Dialogue dialogueScript;
     private bool doorOpened;
     private bool doorOpening;
 
@@ -45,10 +45,8 @@ public class EndDoor : MonoBehaviour
         core = transform.Find("Core").GetComponent<SpriteRenderer>();
 
         doorPrompt = GameObject.Find("Door Prompt").GetComponent<SpriteRenderer>();
-        escapePrompt = GameObject.Find("Escape Prompt").GetComponent<SpriteRenderer>();
 
         doorDialogueHandler = GameObject.Find("DoorDialogueHandler");
-        dialogueScript = doorEndingDialogueHandler.GetComponent<Dialogue>();
     }
 
     // Update is called once per frame
@@ -133,6 +131,7 @@ public class EndDoor : MonoBehaviour
         }
 
 
+
     }
 
     //Enable "???" prompt
@@ -166,6 +165,11 @@ public class EndDoor : MonoBehaviour
         fadeToWhite.enabled = true;
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("Ending");
+    }
+
+    public bool getDoorOpening()
+    {
+        return doorOpening;
     }
 
 }
