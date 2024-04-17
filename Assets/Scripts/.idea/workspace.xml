@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28679f86-4229-4f6a-ad27-5bc1e0fd3811" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Prefabs/Pillow Bat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/Pillow Bat.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnemyFollowPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EnemyFollowPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Healthbar.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Healthbar.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inventory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Inventory.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Player.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScrollingBackground.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/ScrollingBackground.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +66,7 @@
       <workItem from="1712341735782" duration="56000" />
       <workItem from="1712342630142" duration="123000" />
       <workItem from="1712342934799" duration="21000" />
+      <workItem from="1713292022323" duration="62000" />
     </task>
     <servers />
   </component>

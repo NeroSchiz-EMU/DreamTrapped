@@ -124,14 +124,13 @@ public class EndDoor : MonoBehaviour
             dialogueScript.setDoorUnlockCutsceneStarted(false);
             StartCoroutine(DoorOpen());
         }
-
+        
         if (doorOpened && Input.GetButtonDown("Melee"))
         {
             StartCoroutine(FadeToEnding());
         }
 
-
-
+        
     }
 
     //Enable "???" prompt
