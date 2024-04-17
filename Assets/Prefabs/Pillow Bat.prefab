@@ -12,8 +12,10 @@ GameObject:
   - component: {fileID: 645303143949539068}
   - component: {fileID: 3558590465459891539}
   - component: {fileID: 4508831106203668184}
-  - component: {fileID: 3602809897981500762}
   - component: {fileID: 8119084760541731340}
+  - component: {fileID: -5114865294658165645}
+  - component: {fileID: 3602809897981500762}
+  - component: {fileID: 1111993082714570748}
   m_Layer: 0
   m_Name: Pillow Bat
   m_TagString: Hurts
@@ -160,24 +162,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0691452, y: 0.6918335}
   m_EdgeRadius: 0
---- !u!114 &3602809897981500762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5487407056136803605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf0ac467bb9a6da4191b5bd649e238ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  lineOfSight: 8
-  groundCheckDistance: 1
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!95 &8119084760541731340
 Animator:
   serializedVersion: 5
@@ -199,3 +183,59 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-5114865294658165645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5487407056136803605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551cfbb59b067314ebb6de1118f305fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundCheck: {fileID: 0}
+  groundCheckDistance: 0
+  wallCheck: {fileID: 0}
+  wallCheckDistance: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
+  playerCheck: {fileID: 0}
+  playerCheckDistance: 0
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &3602809897981500762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5487407056136803605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf0ac467bb9a6da4191b5bd649e238ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  lineOfSight: 8
+  groundCheckDistance: 1
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!114 &1111993082714570748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5487407056136803605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19941cbdf790eca4e869fd1d58e22866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
+  playerHealth: {fileID: 0}

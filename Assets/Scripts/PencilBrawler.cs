@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class PencilBrawler : Entity
 {
-    private bool isAttacking;
     
     [Header("Move Info")] 
     [SerializeField] private float moveSpeed;
-
-    [Header("PB Script Player detection")] 
-    //[SerializeField] private Transform playerCheck;
-    //[SerializeField] private float playerCheckDistance;
-    //[SerializeField] private LayerMask whatIsPlayer;
-
+    
+    private bool isAttacking;
     private RaycastHit2D isPlayerDetected;
     protected override void Start()
     {
@@ -24,6 +19,7 @@ public class PencilBrawler : Entity
     protected override void Update()
     {
         base.Update();
+        
         
         Movement();
         if (isPlayerDetected)
@@ -45,6 +41,7 @@ public class PencilBrawler : Entity
         if (!isGrounded || isWallDetected)
             Flip();
     }
+    
 
     private void Movement()
     {
