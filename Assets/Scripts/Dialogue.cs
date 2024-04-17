@@ -25,8 +25,9 @@ public class Dialogue : MonoBehaviour
     private bool dialogueActivated;
     private int step;
     private bool openingCutsceneStarted;
+    private bool openingCutsceneComplete;
     private bool doorUnlockCutsceneStarted;
-
+    
     [SerializeField] private Animator explosion;
     [SerializeField] private SpriteRenderer explosionSprite;
     [SerializeField] private AudioSource explosionSound;
@@ -38,6 +39,8 @@ public class Dialogue : MonoBehaviour
 
     private SpriteRenderer dialoguePrompt;
 
+    private Menus menu;
+
     private Player player;
 
     // Start is called before the first frame update
@@ -45,6 +48,7 @@ public class Dialogue : MonoBehaviour
     {
         dialoguePrompt = GameObject.Find("Dialogue Prompt").GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player").GetComponent<Player>();
+        menu = GameObject.Find("Canvas").GetComponent<Menus>();
 
         //Automatically start opening cutscene when its DialogueHandler is active
         if (gameObject.name == "OpeningDialogueHandler") dialogueActivated = true;
@@ -54,8 +58,8 @@ public class Dialogue : MonoBehaviour
     void Update()
     {
         //If input for dialogue is given, OR it's the opening cutscene which starts automatically
-        if (Input.GetButtonDown("Melee") && dialogueActivated && canContinueToNextLine ||
-            gameObject.name == "OpeningDialogueHandler" && !openingCutsceneStarted)
+        if ((Input.GetButtonDown("Melee") && dialogueActivated && canContinueToNextLine && !menu.getPaused()) ||
+            (gameObject.name == "OpeningDialogueHandler" && !openingCutsceneStarted && !menu.getPaused()))
         {
             openingCutsceneStarted = true;
 
@@ -79,6 +83,7 @@ public class Dialogue : MonoBehaviour
                 if(gameObject.name == "OpeningDialogueHandler" ||
                     gameObject.name == "DoorEndingDialogueHandler")
                 {
+                    openingCutsceneComplete = true;
                     player.setInCutscene(false);
                     dialogueActivated = false;
                     gameObject.SetActive(false);
@@ -208,5 +213,10 @@ public class Dialogue : MonoBehaviour
     {
         doorUnlockCutsceneStarted = b;
         return doorUnlockCutsceneStarted;
+    }
+
+    public bool getOpeningCutsceneComplete()
+    {
+        return openingCutsceneComplete;
     }
 }

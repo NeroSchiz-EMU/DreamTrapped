@@ -70,7 +70,7 @@ public class Player : MonoBehaviour
          guns = transform.GetComponentsInChildren<Gun>();
          
         //COMMENT IF DEBUGGING
-        //transform.position = new Vector3(-34.641f, -5.714f, 0f);
+        transform.position = new Vector3(-34.641f, -5.714f, 0f);
     }
     //****************************************************************************
 
