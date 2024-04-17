@@ -8,19 +8,21 @@ public class Menus : MonoBehaviour
     [SerializeField] private GameObject creditsText;
     [SerializeField] private Animator ditherTransition;
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject deathScreen;
     [SerializeField] private GameObject healthAndInv;
     [SerializeField] private GameObject dialogueWindow;
-    [SerializeField] private Animator logo;
     [SerializeField] private Player player;
     [SerializeField] private EndDoor endDoor;
     private bool creditsActive;
     private bool pauseActive;
+    private bool deathActive;
 
     void Update()
     {
         if (Input.GetButtonDown("Pause"))
         {
-            if (pauseActive == false)
+            //PAUSE SCREEN
+            if (pauseMenu != null && pauseActive == false && !deathActive)
             {
                 pauseMenu.SetActive(true);
                 healthAndInv.SetActive(false);
@@ -38,6 +40,17 @@ public class Menus : MonoBehaviour
             {
                 Unpause();
             }
+        }
+
+        //DEATH SCREEN
+        if(player != null && player.getHealth() >= 100)
+        {
+            deathActive = true;
+            healthAndInv.SetActive(false);
+            dialogueWindow.SetActive(false);
+            deathScreen.SetActive(true);
+
+            //Time.timeScale = 0;
         }
     }
 
@@ -105,6 +118,11 @@ public class Menus : MonoBehaviour
     public bool getPaused()
     {
         return pauseActive;
+    }
+
+    public bool getDead()
+    {
+        return deathActive;
     }
 
 }

@@ -42,12 +42,15 @@ public class Dialogue : MonoBehaviour
     private Menus menu;
 
     private Player player;
+    [SerializeField] private Animator playerAnimator;
+    [SerializeField] private RuntimeAnimatorController dreamerIdle;
 
     // Start is called before the first frame update
     void Start()
     {
         dialoguePrompt = GameObject.Find("Dialogue Prompt").GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player").GetComponent<Player>();
+
         menu = GameObject.Find("Canvas").GetComponent<Menus>();
 
         //Automatically start opening cutscene when its DialogueHandler is active
@@ -58,10 +61,15 @@ public class Dialogue : MonoBehaviour
     void Update()
     {
         //If input for dialogue is given, OR it's the opening cutscene which starts automatically
-        if ((Input.GetButtonDown("Melee") && dialogueActivated && canContinueToNextLine && !menu.getPaused()) ||
-            (gameObject.name == "OpeningDialogueHandler" && !openingCutsceneStarted && !menu.getPaused()))
+        if ((Input.GetButtonDown("Melee") && dialogueActivated && canContinueToNextLine && !menu.getPaused() && !menu.getDead()) ||
+            (gameObject.name == "OpeningDialogueHandler" && !openingCutsceneStarted && !menu.getPaused() && !menu.getDead()))
         {
             openingCutsceneStarted = true;
+
+            if(gameObject.name == "DoorEndingDialogueHandler")
+            {
+                playerAnimator.runtimeAnimatorController = dreamerIdle;
+            }
 
             if(gameObject.name == "ExplosionDialogueHandler" && step == 3)
             {

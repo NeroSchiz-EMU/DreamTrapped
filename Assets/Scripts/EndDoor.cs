@@ -19,8 +19,11 @@ public class EndDoor : MonoBehaviour
     [SerializeField] private Sprite doorFull;
 
     [SerializeField] private Player player;
+    [SerializeField] private Animator playerAnimator;
     [SerializeField] private Animator animator;
-    [SerializeField] private Animator fadeToWhite; 
+    [SerializeField] private Animator fadeToWhite;
+
+    [SerializeField] private RuntimeAnimatorController dreamerIdle;
 
     [SerializeField] private int abilityAmount;
     private bool swordCounted;
@@ -116,6 +119,8 @@ public class EndDoor : MonoBehaviour
 
         if (dialogueScript.getDoorUnlockCutsceneStarted())
         {
+            //playerAnimator.SetBool("doorOpening", true);
+            playerAnimator.runtimeAnimatorController = dreamerIdle;
             doorOpening = true;
             doorPrompt.enabled = false;
             doorEndingDialogueHandler.SetActive(false);
