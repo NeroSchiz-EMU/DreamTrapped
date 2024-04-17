@@ -120,7 +120,6 @@ public class EndDoor : MonoBehaviour
         if (dialogueScript.getDoorUnlockCutsceneStarted())
         {
             //playerAnimator.SetBool("doorOpening", true);
-            playerAnimator.runtimeAnimatorController = dreamerIdle;
             doorOpening = true;
             doorPrompt.enabled = false;
             doorEndingDialogueHandler.SetActive(false);
