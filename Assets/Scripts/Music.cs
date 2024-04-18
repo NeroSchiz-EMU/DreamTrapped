@@ -25,7 +25,9 @@ public class Music : MonoBehaviour
         {
             levelThemeStarted = true;
             audioSource.Stop();
-            audioSource.PlayOneShot(levelTheme);
+            audioSource.loop = true;
+            audioSource.clip = levelTheme;
+            audioSource.Play();
         }
     }
 }
