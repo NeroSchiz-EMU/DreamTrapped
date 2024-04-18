@@ -13,10 +13,10 @@ public class PillowBat : Entity
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        base.Update();
-    }
+    // void Update()
+    // {
+    //     base.Update();
+    // }
     
     protected override void CollisionChecks()
     {

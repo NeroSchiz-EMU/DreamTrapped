@@ -33,6 +33,10 @@ public class Player : MonoBehaviour
     [Header("Attack Info")] 
     private bool isAttacking;
     private bool isAirAttacking;
+    [SerializeField] protected Transform attackArea;
+    public float attackRange;
+    public int attackDamage;
+    public LayerMask enemyLayers;
 
     [Header("Shooting Info")]
     Gun[] guns;
@@ -45,9 +49,12 @@ public class Player : MonoBehaviour
     private bool facingRight = true;
 
     [Header("Collision Info")]
-    [SerializeField] protected Transform groundCheck;
-    [SerializeField] private float groundCheckDistance;
+    [SerializeField] protected Transform groundCheckLeft;
+    [SerializeField] private float groundCheckDistanceLeft;
+    [SerializeField] protected Transform groundCheckRight;
+    [SerializeField] private float groundCheckDistanceRight;
     [SerializeField] private LayerMask whatIsGround;
+    
     private bool isGrounded;
 
     [Header("Item Progression")]
@@ -70,7 +77,7 @@ public class Player : MonoBehaviour
          guns = transform.GetComponentsInChildren<Gun>();
          
         //COMMENT IF DEBUGGING
-        //transform.position = new Vector3(-34.641f, -5.714f, 0f);
+        transform.position = new Vector3(-34.641f, -5.714f, 0f);
     }
     //****************************************************************************
 
@@ -125,8 +132,12 @@ public class Player : MonoBehaviour
 
     private void CollisionChecks()
     {
-        isGrounded = Physics2D.Raycast(groundCheck.position,
-            Vector2.down, groundCheckDistance, whatIsGround);
+        if (groundCheckLeft || groundCheckRight == true)
+            isGrounded = true;
+        isGrounded = Physics2D.Raycast(groundCheckLeft.position,
+            Vector2.down, groundCheckDistanceLeft, whatIsGround);
+        isGrounded = Physics2D.Raycast(groundCheckRight.position,
+            Vector2.down, groundCheckDistanceRight, whatIsGround);
     }
 
     private void CheckInput()
@@ -143,7 +154,20 @@ public class Player : MonoBehaviour
             if (Input.GetButtonDown("Melee") && hasSword)
             {
                 if (!isGrounded == false)
+                {
                     isAttacking = true;
+                    Collider2D[] hitEnemies = 
+                        Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayers);
+                    foreach(Collider2D enemy in hitEnemies)
+                    {
+                        if (enemy.CompareTag("Enemy"))
+                        {
+                            enemy.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
+                        }
+                    }
+                }
+                    
+                
             }
             if (Input.GetButtonUp("Melee") && hasSword)
             {
@@ -256,27 +280,31 @@ public class Player : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawLine(groundCheck.position, 
-            new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
-        // Gizmos.DrawLine(transform.position, 
-        //     new Vector3(transform.position.x, transform.position.y - groundCheckDistance));
+        Gizmos.DrawLine(groundCheckLeft.position, 
+            new Vector3(groundCheckLeft.position.x, groundCheckLeft.position.y - groundCheckDistanceLeft));
+        Gizmos.DrawLine(groundCheckRight.position, 
+            new Vector3(groundCheckRight.position.x, groundCheckRight.position.y - groundCheckDistanceRight));
+       
     }
 
-    /*private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Hurts")
-        {
-            StartCoroutine(TakeDamage());
-            Debug.Log("ouchies");
-        }
-    }
+     // private void OnTriggerEnter2D(Collider2D collision)
+     // {
+     //     if (collision.tag == "Hurts")
+     //     {
+     //         Debug.Log("Entered hurt object, starting health restoration");
+     //         StartCoroutine(TakeDamage());
+     //         IEnumerator TakeDamage()
+     //         {
+     //             Debug.Log("Initial health: " + health);
+     //             health += 5;
+     //             Debug.Log("Health after restore: " + health);
+     //             yield return new WaitForSeconds(0.5f);
+     //         }
+     //         Debug.Log("Coroutine launched");
+     //     }
+     // }
 
-    IEnumerator TakeDamage()
-    {
-        health += 5;
-        yield return new WaitForSeconds(0.5f);
-
-    }*/
+     
 
 
     //****************************************************************************

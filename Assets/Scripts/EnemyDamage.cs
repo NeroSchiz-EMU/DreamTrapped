@@ -17,7 +17,7 @@ public class EnemyDamage : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            player.changeHealth(+20);
+            player.changeHealth(+10);
         }
     }
 }

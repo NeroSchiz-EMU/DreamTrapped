@@ -10,6 +10,7 @@ public class PencilBrawler : Entity
     
     private bool isAttacking;
     private RaycastHit2D isPlayerDetected;
+    
     protected override void Start()
     {
         base.Start();
@@ -24,9 +25,9 @@ public class PencilBrawler : Entity
         Movement();
         if (isPlayerDetected)
         {
-            if (isPlayerDetected.distance > 1.5)
+            if (isPlayerDetected.distance > 1)
             {
-                rb.velocity = new Vector2(moveSpeed * 1.5f * facingDir, rb.velocity.y);
+                rb.velocity = new Vector2(moveSpeed * 2.5f * facingDir, rb.velocity.y);
                 Debug.Log("I see the player!");
                 isAttacking = false;
             }
