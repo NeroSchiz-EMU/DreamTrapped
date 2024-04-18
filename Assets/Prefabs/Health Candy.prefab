@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4680768612827481623}
   - component: {fileID: 447878427443991179}
   - component: {fileID: 7039384525503224113}
+  - component: {fileID: 6340540143377551976}
   m_Layer: 0
   m_Name: Health Candy
   m_TagString: Untagged
@@ -163,6 +164,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ab93a881c0ae4175914dd0fa5bab576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 4680768612827481623}
+--- !u!114 &6340540143377551976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2466627810248090209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea2b8c77cbe44fc08dc88662740b659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 4680768612827481623}
