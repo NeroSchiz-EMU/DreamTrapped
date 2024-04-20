@@ -8,6 +8,11 @@ public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
+    private SpriteRenderer sprite;
+    [SerializeField] ParticleSystem particles;
+    [SerializeField] ParticleSystem particlesBoots;
+    [SerializeField] ParticleSystem particlesDamage;
+    [SerializeField] Animator healthbarAnimator;
 
     private bool inCutscene;
    
@@ -56,6 +61,8 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask whatIsGround;
     
     private bool isGrounded;
+    private bool isGroundedLeft;
+    private bool isGroundedRight;
 
     [Header("Item Progression")]
     [SerializeField] private bool hasSword;
@@ -72,12 +79,13 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         rb = GetComponent<Rigidbody2D>();
-         anim = GetComponentInChildren<Animator>();
-         guns = transform.GetComponentsInChildren<Gun>();
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponentInChildren<Animator>();
+        sprite = GetComponentInChildren<SpriteRenderer>();
+        guns = transform.GetComponentsInChildren<Gun>();
          
         //COMMENT IF DEBUGGING
-        transform.position = new Vector3(-34.641f, -5.714f, 0f);
+        //transform.position = new Vector3(-34.641f, -5.714f, 0f);
     }
     //****************************************************************************
 
@@ -104,6 +112,7 @@ public class Player : MonoBehaviour
             if (isGrounded || doubleJump)
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                particlesBoots.Play();
                 doubleJump = !doubleJump;
             }
         }
@@ -132,12 +141,13 @@ public class Player : MonoBehaviour
 
     private void CollisionChecks()
     {
-        if (groundCheckLeft || groundCheckRight == true)
-            isGrounded = true;
-        isGrounded = Physics2D.Raycast(groundCheckLeft.position,
+        isGroundedLeft = Physics2D.Raycast(groundCheckLeft.position,
             Vector2.down, groundCheckDistanceLeft, whatIsGround);
-        isGrounded = Physics2D.Raycast(groundCheckRight.position,
+        isGroundedRight = Physics2D.Raycast(groundCheckRight.position,
             Vector2.down, groundCheckDistanceRight, whatIsGround);
+
+        if (isGroundedLeft || isGroundedRight) isGrounded = true;
+        else isGrounded = false;
     }
 
     private void CheckInput()
@@ -146,46 +156,40 @@ public class Player : MonoBehaviour
         {
             xInput = Input.GetAxisRaw("Horizontal");
 
+            //Dash ----------------------------------------------------------------------------
             if (Input.GetButtonDown("Dash") && hasDash)
             {
                 DashAbility();
             }
 
+            //Melee ----------------------------------------------------------------------------
             if (Input.GetButtonDown("Melee") && hasSword)
             {
-                if (!isGrounded == false)
+                if (isGrounded) isAttacking = true;
+                if (!isGrounded) isAirAttacking = true;
+
+                StartCoroutine(Melee());
+
+                Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayers);
+
+                foreach(Collider2D enemy in hitEnemies)
                 {
-                    isAttacking = true;
-                    Collider2D[] hitEnemies = 
-                        Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayers);
-                    foreach(Collider2D enemy in hitEnemies)
+                    if (enemy.CompareTag("Enemy"))
                     {
-                        if (enemy.CompareTag("Enemy"))
-                        {
-                            enemy.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
-                        }
+                        enemy.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
                     }
                 }
-                    
-                
             }
-            if (Input.GetButtonUp("Melee") && hasSword)
+
+
+
+            /*if (Input.GetButtonUp("Melee") && hasSword)
             {
-                if (isGrounded)
-                    isAttacking = false;
-            }
-            
-            if (Input.GetButtonDown("Melee") && hasSword)
-            {
-                if (isGrounded == false)
-                    isAirAttacking = true;
-            }
-            if (Input.GetButtonUp("Melee") && hasSword)
-            {
-                if (isGrounded)
-                    isAirAttacking = false;
-            }
-            
+                if (isGrounded) isAttacking = false;
+                if (!isGrounded) isAirAttacking = false;
+            }*/
+
+            //Gun ----------------------------------------------------------------------------
             if (Input.GetButtonDown("Shoot") && hasGun)
             {
                 if (!isGrounded == false)
@@ -207,6 +211,8 @@ public class Player : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
 
+                particles.Play();
+
                 jumpBufferCounter = 0f;
             }
 
@@ -214,9 +220,12 @@ public class Player : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
 
+                
+
                 coyoteTimeCounter = 0f;
             }
         }
+
         else if (inCutscene)
         {
             rb.velocity = new Vector2(0, -10);
@@ -378,13 +387,33 @@ public class Player : MonoBehaviour
     public void changeHealth(float h)
     {
         health = Mathf.Clamp(health + h, 0, maxHealth); //limits health to 0
-        //Debug.Log(health);
+
+        //If it was damage
+        if(h > 0)
+        {
+            healthbarAnimator.SetTrigger("damaged");
+            particlesDamage.Play();
+            StartCoroutine(DamageFlash());
+        }
     }
     public void resetHealth()
     {
         health = 0;
     }
 
+    IEnumerator DamageFlash()
+    {
+        sprite.color = new Color(1f, 0.5f, 0.5f, 1f); //Set color to slight red
+        yield return new WaitForSeconds(0.2f);
+        sprite.color = new Color(1f, 1f, 1f, 1f); //Set color to normal
+    }
+
+    IEnumerator Melee()
+    {
+        yield return new WaitForSeconds(0.4f); //Duration of attack animation
+        isAttacking = false;
+        isAirAttacking = false;
+    }
 }
 
 

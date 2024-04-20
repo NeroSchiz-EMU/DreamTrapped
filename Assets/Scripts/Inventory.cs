@@ -15,6 +15,16 @@ public class Inventory : MonoBehaviour
     private Image gunButton;
     private Image dashButton;
 
+    [SerializeField] private ParticleSystem swordParticles;
+    [SerializeField] private ParticleSystem bootsParticles;
+    [SerializeField] private ParticleSystem gunParticles;
+    [SerializeField] private ParticleSystem dashParticles;
+
+    private bool swordParticlesPlayed;
+    private bool bootsParticlesPlayed;
+    private bool gunParticlesPlayed;
+    private bool dashParticlesPlayed;
+
     [SerializeField] Player player;
 
     [Header("Item Sprites")]
@@ -46,21 +56,41 @@ public class Inventory : MonoBehaviour
         {
             swordIcon.sprite = swordFull;
             swordButton.enabled = true;
+            if (!swordParticlesPlayed)
+            {
+                swordParticles.Play();
+                swordParticlesPlayed = true;
+            }
         }
         if (player.getHasBoots())
         {
             bootsIcon.sprite = bootsFull;
             bootsButton.enabled = true;
+            if (!bootsParticlesPlayed)
+            {
+                bootsParticles.Play();
+                bootsParticlesPlayed = true;
+            }
         }
         if (player.getHasGun())
         {
             gunIcon.sprite = gunFull;
             gunButton.enabled = true;
+            if (!gunParticlesPlayed)
+            {
+                gunParticles.Play();
+                gunParticlesPlayed = true;
+            }
         }
         if (player.getHasDash())
         {
             dashIcon.sprite = dashFull;
             dashButton.enabled = true;
+            if (!dashParticlesPlayed)
+            {
+                dashParticles.Play();
+                dashParticlesPlayed = true;
+            }
         }
     }
 }

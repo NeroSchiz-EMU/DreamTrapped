@@ -20,6 +20,8 @@ public class Bullet : MonoBehaviour
 
         if (player.getFacingRight()) facingRightWhenFired = true;
         else if(player.getFacingRight() == false) facingRightWhenFired = false;
+
+        StartCoroutine(Despawn());
     }
     
     void Update()
@@ -37,5 +39,11 @@ public class Bullet : MonoBehaviour
         Vector2 pos = transform.position;
         pos += velocity * Time.fixedDeltaTime;
         transform.position = pos;
+    }
+
+    IEnumerator Despawn()
+    {
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
     }
 }

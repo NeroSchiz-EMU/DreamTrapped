@@ -12,10 +12,12 @@ public class Menus : MonoBehaviour
     [SerializeField] private GameObject healthAndInv;
     [SerializeField] private GameObject dialogueWindow;
     [SerializeField] private Player player;
+    [SerializeField] private Animator playerAnimator;
     [SerializeField] private EndDoor endDoor;
     private bool creditsActive;
     private bool pauseActive;
     private bool deathActive;
+    private bool dyingStarted;
 
     void Update()
     {
@@ -43,13 +45,18 @@ public class Menus : MonoBehaviour
         }
 
         //DEATH SCREEN
-        if(player != null && player.getHealth() >= 100)
+        if(player != null && player.getHealth() >= 98)
         {
             deathActive = true;
+            player.setInCutscene(true);
+            if (!dyingStarted)
+            {
+                playerAnimator.SetBool("dying", true); //Fall to ground animation
+                dyingStarted = true;
+                StartCoroutine(PlayerDead());
+            }
             healthAndInv.SetActive(false);
             dialogueWindow.SetActive(false);
-            deathScreen.SetActive(true);
-
             //Time.timeScale = 0;
         }
     }
@@ -123,6 +130,15 @@ public class Menus : MonoBehaviour
     public bool getDead()
     {
         return deathActive;
+    }
+
+    IEnumerator PlayerDead()
+    {
+        yield return new WaitForSeconds(1);
+        playerAnimator.SetBool("dying", false);
+        playerAnimator.SetBool("dead", true); //Looping Z animation
+        yield return new WaitForSeconds(2);
+        deathScreen.SetActive(true);
     }
 
 }

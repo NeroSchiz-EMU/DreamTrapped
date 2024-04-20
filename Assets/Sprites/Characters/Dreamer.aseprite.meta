@@ -2,7 +2,57 @@ fileFormatVersion: 2
 guid: 42759b09416d44f778d98b210612c2bf
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Dash
+    second: {fileID: 7400000, guid: 337d72c35967447ea9ccd693bba7a7d9, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Death-fall
+    second: {fileID: 7400000, guid: 824db444568214e88a8f37add91781db, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Death-loop
+    second: {fileID: 7400000, guid: 5f5e7a21d4c7f468d9599a688c8f8d85, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle
+    second: {fileID: 7400000, guid: fd56fb24647064f99a37e8691b5e3202, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Jump
+    second: {fileID: 7400000, guid: 9ba4294e4725e43e2b999ccfd98de103, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Jump-melee
+    second: {fileID: 7400000, guid: c5c49137040084144ad5c7cfb7eb2027, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Jump-shoot
+    second: {fileID: 7400000, guid: 08dc40ac4e87b4e599fb8f010a8bf9be, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Melee
+    second: {fileID: 7400000, guid: aa03a00326f1c404d80798f46d9a57f7, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Run
+    second: {fileID: 7400000, guid: f300a57c2164143b5b98ba46a3c4a5ab, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Shoot
+    second: {fileID: 7400000, guid: 57509e5ba5b144813a478ceebcc3ed0d, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -97,7 +147,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638472166897444670
+  platformSettingsDirtyTick: 638492254754032990
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -943,7 +993,7 @@ ScriptedImporter:
     uvTransform: {x: 51, y: 94}
   - name: Dreamer_Frame_41
     originalName: 
-    pivot: {x: 1.5833334, y: -0.34375}
+    pivot: {x: 0.5833334, y: -0.34375}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -963,7 +1013,7 @@ ScriptedImporter:
     uvTransform: {x: 162, y: 224}
   - name: Dreamer_Frame_42
     originalName: 
-    pivot: {x: 1.5833334, y: -0.34375}
+    pivot: {x: 0.5833334, y: -0.34375}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -983,7 +1033,7 @@ ScriptedImporter:
     uvTransform: {x: 162, y: 264}
   - name: Dreamer_Frame_43
     originalName: 
-    pivot: {x: 1.638889, y: -0.34375}
+    pivot: {x: 0.6944445, y: -0.34375}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1003,7 +1053,7 @@ ScriptedImporter:
     uvTransform: {x: 162, y: 304}
   - name: Dreamer_Frame_44
     originalName: 
-    pivot: {x: 1.638889, y: -0.34375}
+    pivot: {x: 0.6944445, y: -0.34375}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1023,7 +1073,7 @@ ScriptedImporter:
     uvTransform: {x: 162, y: 344}
   - name: Dreamer_Frame_45
     originalName: 
-    pivot: {x: 1.5277778, y: -0.34375}
+    pivot: {x: 0.52777785, y: -0.34375}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1043,7 +1093,7 @@ ScriptedImporter:
     uvTransform: {x: 162, y: 384}
   - name: Dreamer_Frame_46
     originalName: 
-    pivot: {x: 1.5277778, y: -0.34375}
+    pivot: {x: 0.52777785, y: -0.34375}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1063,7 +1113,7 @@ ScriptedImporter:
     uvTransform: {x: 162, y: 424}
   - name: Dreamer_Frame_47
     originalName: 
-    pivot: {x: 1.638889, y: -0.34375}
+    pivot: {x: 0.6388889, y: -0.34375}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1083,7 +1133,7 @@ ScriptedImporter:
     uvTransform: {x: 162, y: 464}
   - name: Dreamer_Frame_48
     originalName: 
-    pivot: {x: 1.638889, y: -0.34375}
+    pivot: {x: 0.6388889, y: -0.34375}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1103,7 +1153,7 @@ ScriptedImporter:
     uvTransform: {x: 188, y: 46}
   - name: Dreamer_Frame_49
     originalName: 
-    pivot: {x: 0.98484856, y: -0.5416667}
+    pivot: {x: 0.50000006, y: -0.5416667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1123,7 +1173,7 @@ ScriptedImporter:
     uvTransform: {x: 121, y: 4}
   - name: Dreamer_Frame_50
     originalName: 
-    pivot: {x: 0.98484856, y: -0.5416667}
+    pivot: {x: 0.50000006, y: -0.5416667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1143,7 +1193,7 @@ ScriptedImporter:
     uvTransform: {x: 121, y: 36}
   - name: Dreamer_Frame_51
     originalName: 
-    pivot: {x: 0.98333335, y: -0.9166667}
+    pivot: {x: 0.51666665, y: -0.9166667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1163,7 +1213,7 @@ ScriptedImporter:
     uvTransform: {x: 215, y: 238}
   - name: Dreamer_Frame_52
     originalName: 
-    pivot: {x: 0.98333335, y: -0.9166667}
+    pivot: {x: 0.51666665, y: -0.9166667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1183,7 +1233,7 @@ ScriptedImporter:
     uvTransform: {x: 215, y: 258}
   - name: Dreamer_Frame_53
     originalName: 
-    pivot: {x: 0.98333335, y: -0.9166667}
+    pivot: {x: 0.51666665, y: -0.9166667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1203,7 +1253,7 @@ ScriptedImporter:
     uvTransform: {x: 215, y: 278}
   - name: Dreamer_Frame_54
     originalName: 
-    pivot: {x: 0.98333335, y: -0.9166667}
+    pivot: {x: 0.51666665, y: -0.9166667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1223,7 +1273,7 @@ ScriptedImporter:
     uvTransform: {x: 215, y: 298}
   - name: Dreamer_Frame_55
     originalName: 
-    pivot: {x: 0.98333335, y: -0.9166667}
+    pivot: {x: 0.51666665, y: -0.9166667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1243,7 +1293,7 @@ ScriptedImporter:
     uvTransform: {x: 215, y: 318}
   - name: Dreamer_Frame_56
     originalName: 
-    pivot: {x: 0.98333335, y: -0.84615386}
+    pivot: {x: 0.51666665, y: -0.84615386}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1263,7 +1313,7 @@ ScriptedImporter:
     uvTransform: {x: 215, y: 70}
   - name: Dreamer_Frame_57
     originalName: 
-    pivot: {x: 0.98333335, y: -0.84615386}
+    pivot: {x: 0.51666665, y: -0.84615386}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1283,7 +1333,7 @@ ScriptedImporter:
     uvTransform: {x: 215, y: 91}
   - name: Dreamer_Frame_58
     originalName: 
-    pivot: {x: 0.98333335, y: -0.84615386}
+    pivot: {x: 0.51666665, y: -0.84615386}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1303,7 +1353,7 @@ ScriptedImporter:
     uvTransform: {x: 215, y: 112}
   - name: Dreamer_Frame_59
     originalName: 
-    pivot: {x: 0.98333335, y: -0.84615386}
+    pivot: {x: 0.51666665, y: -0.84615386}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1323,7 +1373,7 @@ ScriptedImporter:
     uvTransform: {x: 215, y: 133}
   - name: Dreamer_Frame_60
     originalName: 
-    pivot: {x: 0.98333335, y: -0.84615386}
+    pivot: {x: 0.51666665, y: -0.84615386}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1343,7 +1393,7 @@ ScriptedImporter:
     uvTransform: {x: 215, y: 154}
   - name: Dreamer_Frame_61
     originalName: 
-    pivot: {x: 0.98333335, y: -0.78571427}
+    pivot: {x: 0.51666665, y: -0.78571427}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1363,7 +1413,7 @@ ScriptedImporter:
     uvTransform: {x: 215, y: 4}
   - name: Dreamer_Frame_62
     originalName: 
-    pivot: {x: 0.98333335, y: -0.78571427}
+    pivot: {x: 0.51666665, y: -0.78571427}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1383,7 +1433,7 @@ ScriptedImporter:
     uvTransform: {x: 215, y: 26}
   - name: Dreamer_Frame_63
     originalName: 
-    pivot: {x: 0.98333335, y: -0.78571427}
+    pivot: {x: 0.51666665, y: -0.78571427}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1403,7 +1453,7 @@ ScriptedImporter:
     uvTransform: {x: 215, y: 48}
   - name: Dreamer_Frame_64
     originalName: 
-    pivot: {x: 0.98333335, y: -0.84615386}
+    pivot: {x: 0.51666665, y: -0.84615386}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1423,7 +1473,7 @@ ScriptedImporter:
     uvTransform: {x: 215, y: 175}
   - name: Dreamer_Frame_65
     originalName: 
-    pivot: {x: 0.98333335, y: -0.84615386}
+    pivot: {x: 0.51666665, y: -0.84615386}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1443,7 +1493,7 @@ ScriptedImporter:
     uvTransform: {x: 215, y: 196}
   - name: Dreamer_Frame_66
     originalName: 
-    pivot: {x: 0.98333335, y: -0.84615386}
+    pivot: {x: 0.51666665, y: -0.84615386}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1463,7 +1513,7 @@ ScriptedImporter:
     uvTransform: {x: 215, y: 217}
   - name: Dreamer_Frame_67
     originalName: 
-    pivot: {x: 1.5208334, y: -0.2631579}
+    pivot: {x: 0.64583325, y: -0.2631579}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1483,7 +1533,7 @@ ScriptedImporter:
     uvTransform: {x: 89, y: 50}
   - name: Dreamer_Frame_68
     originalName: 
-    pivot: {x: 1.1166667, y: -0.2631579}
+    pivot: {x: 0.4166667, y: -0.2631579}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1503,7 +1553,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 366}
   - name: Dreamer_Frame_69
     originalName: 
-    pivot: {x: 1.1166667, y: -0.2631579}
+    pivot: {x: 0.4166667, y: -0.2631579}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1523,7 +1573,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 412}
   - name: Dreamer_Frame_70
     originalName: 
-    pivot: {x: 1.5227274, y: -0.2631579}
+    pivot: {x: 0.5681818, y: -0.2631579}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1543,7 +1593,7 @@ ScriptedImporter:
     uvTransform: {x: 89, y: 96}
   - name: Dreamer_Frame_71
     originalName: 
-    pivot: {x: 1.5227274, y: -0.2631579}
+    pivot: {x: 0.5681818, y: -0.2631579}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1961,7 +2011,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_41
       frameIndex: 41
       cellRect:
-        x: 15
+        x: 33
         y: 11
         width: 18
         height: 32
@@ -1969,7 +2019,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_42
       frameIndex: 42
       cellRect:
-        x: 15
+        x: 33
         y: 11
         width: 18
         height: 32
@@ -1977,7 +2027,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_43
       frameIndex: 43
       cellRect:
-        x: 14
+        x: 31
         y: 11
         width: 18
         height: 32
@@ -1985,7 +2035,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_44
       frameIndex: 44
       cellRect:
-        x: 14
+        x: 31
         y: 11
         width: 18
         height: 32
@@ -1993,7 +2043,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_45
       frameIndex: 45
       cellRect:
-        x: 16
+        x: 34
         y: 11
         width: 18
         height: 32
@@ -2001,7 +2051,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_46
       frameIndex: 46
       cellRect:
-        x: 16
+        x: 34
         y: 11
         width: 18
         height: 32
@@ -2009,7 +2059,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_47
       frameIndex: 47
       cellRect:
-        x: 14
+        x: 32
         y: 11
         width: 18
         height: 32
@@ -2017,7 +2067,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_48
       frameIndex: 48
       cellRect:
-        x: 14
+        x: 32
         y: 11
         width: 18
         height: 32
@@ -2025,7 +2075,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_49
       frameIndex: 49
       cellRect:
-        x: 11
+        x: 27
         y: 13
         width: 33
         height: 24
@@ -2033,7 +2083,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_50
       frameIndex: 50
       cellRect:
-        x: 11
+        x: 27
         y: 13
         width: 33
         height: 24
@@ -2041,7 +2091,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_51
       frameIndex: 51
       cellRect:
-        x: 14
+        x: 28
         y: 11
         width: 30
         height: 12
@@ -2049,7 +2099,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_52
       frameIndex: 52
       cellRect:
-        x: 14
+        x: 28
         y: 11
         width: 30
         height: 12
@@ -2057,7 +2107,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_53
       frameIndex: 53
       cellRect:
-        x: 14
+        x: 28
         y: 11
         width: 30
         height: 12
@@ -2065,7 +2115,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_54
       frameIndex: 54
       cellRect:
-        x: 14
+        x: 28
         y: 11
         width: 30
         height: 12
@@ -2073,7 +2123,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_55
       frameIndex: 55
       cellRect:
-        x: 14
+        x: 28
         y: 11
         width: 30
         height: 12
@@ -2081,7 +2131,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_56
       frameIndex: 56
       cellRect:
-        x: 14
+        x: 28
         y: 11
         width: 30
         height: 13
@@ -2089,7 +2139,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_57
       frameIndex: 57
       cellRect:
-        x: 14
+        x: 28
         y: 11
         width: 30
         height: 13
@@ -2097,7 +2147,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_58
       frameIndex: 58
       cellRect:
-        x: 14
+        x: 28
         y: 11
         width: 30
         height: 13
@@ -2105,7 +2155,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_59
       frameIndex: 59
       cellRect:
-        x: 14
+        x: 28
         y: 11
         width: 30
         height: 13
@@ -2113,7 +2163,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_60
       frameIndex: 60
       cellRect:
-        x: 14
+        x: 28
         y: 11
         width: 30
         height: 13
@@ -2121,7 +2171,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_61
       frameIndex: 61
       cellRect:
-        x: 14
+        x: 28
         y: 11
         width: 30
         height: 14
@@ -2129,7 +2179,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_62
       frameIndex: 62
       cellRect:
-        x: 14
+        x: 28
         y: 11
         width: 30
         height: 14
@@ -2137,7 +2187,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_63
       frameIndex: 63
       cellRect:
-        x: 14
+        x: 28
         y: 11
         width: 30
         height: 14
@@ -2145,7 +2195,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_64
       frameIndex: 64
       cellRect:
-        x: 14
+        x: 28
         y: 11
         width: 30
         height: 13
@@ -2153,7 +2203,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_65
       frameIndex: 65
       cellRect:
-        x: 14
+        x: 28
         y: 11
         width: 30
         height: 13
@@ -2161,7 +2211,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_66
       frameIndex: 66
       cellRect:
-        x: 14
+        x: 28
         y: 11
         width: 30
         height: 13
@@ -2169,7 +2219,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_67
       frameIndex: 67
       cellRect:
-        x: 7
+        x: 28
         y: 10
         width: 24
         height: 38
@@ -2177,7 +2227,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_68
       frameIndex: 68
       cellRect:
-        x: 10
+        x: 31
         y: 10
         width: 30
         height: 38
@@ -2185,7 +2235,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_69
       frameIndex: 69
       cellRect:
-        x: 10
+        x: 31
         y: 10
         width: 30
         height: 38
@@ -2193,7 +2243,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_70
       frameIndex: 70
       cellRect:
-        x: 10
+        x: 31
         y: 10
         width: 22
         height: 38
@@ -2201,7 +2251,7 @@ ScriptedImporter:
     - name: Dreamer_Frame_71
       frameIndex: 71
       cellRect:
-        x: 10
+        x: 31
         y: 10
         width: 22
         height: 38
