@@ -67,7 +67,6 @@ public class Menus : MonoBehaviour
         //MAP
         if (map != null && Input.GetButtonDown("Map") && !pauseActive)
         {
-            Debug.Log("map");
             if (!mapActive && !player.getInCutscene())
             {
                 mapActive = true;
