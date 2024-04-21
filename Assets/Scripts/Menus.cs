@@ -14,7 +14,10 @@ public class Menus : MonoBehaviour
     [SerializeField] private Player player;
     [SerializeField] private Animator playerAnimator;
     [SerializeField] private EndDoor endDoor;
+    [SerializeField] private GameObject map;
+    [SerializeField] private Animator mapAnimator;
     private bool creditsActive;
+    private bool mapActive;
     private bool pauseActive;
     private bool deathActive;
     private bool dyingStarted;
@@ -24,7 +27,7 @@ public class Menus : MonoBehaviour
         if (Input.GetButtonDown("Pause"))
         {
             //PAUSE SCREEN
-            if (pauseMenu != null && pauseActive == false && !deathActive)
+            if (pauseMenu != null && pauseActive == false && !deathActive && !mapActive)
             {
                 pauseMenu.SetActive(true);
                 healthAndInv.SetActive(false);
@@ -56,8 +59,27 @@ public class Menus : MonoBehaviour
                 StartCoroutine(PlayerDead());
             }
             healthAndInv.SetActive(false);
+            map.SetActive(false);
             dialogueWindow.SetActive(false);
             //Time.timeScale = 0;
+        }
+
+        //MAP
+        if (map != null && Input.GetButtonDown("Map") && !pauseActive)
+        {
+            Debug.Log("map");
+            if (!mapActive && !player.getInCutscene())
+            {
+                mapActive = true;
+                map.SetActive(true);
+                mapAnimator.SetBool("active", true);
+                player.setInCutscene(true);
+                
+            }
+            else if (mapActive)
+            {
+                StartCoroutine(CloseMap());
+            }
         }
     }
 
@@ -132,6 +154,11 @@ public class Menus : MonoBehaviour
         return deathActive;
     }
 
+    public bool getMapOpen()
+    {
+        return mapActive;
+    }
+
     IEnumerator PlayerDead()
     {
         yield return new WaitForSeconds(1);
@@ -139,6 +166,15 @@ public class Menus : MonoBehaviour
         playerAnimator.SetBool("dead", true); //Looping Z animation
         yield return new WaitForSeconds(2);
         deathScreen.SetActive(true);
+    }
+
+    IEnumerator CloseMap()
+    {
+        mapAnimator.SetBool("active", false);
+        yield return new WaitForSeconds(0.4f);
+        mapActive = false;
+        player.setInCutscene(false);
+        map.SetActive(false);
     }
 
 }

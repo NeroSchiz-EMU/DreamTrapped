@@ -61,8 +61,8 @@ public class Dialogue : MonoBehaviour
     void Update()
     {
         //If input for dialogue is given, OR it's the opening cutscene which starts automatically
-        if ((Input.GetButtonDown("Melee") && dialogueActivated && canContinueToNextLine && !menu.getPaused() && !menu.getDead()) ||
-            (gameObject.name == "OpeningDialogueHandler" && !openingCutsceneStarted && !menu.getPaused() && !menu.getDead()))
+        if ((Input.GetButtonDown("Melee") && dialogueActivated && canContinueToNextLine && !menu.getPaused() && !menu.getDead() && !menu.getMapOpen()) ||
+            (gameObject.name == "OpeningDialogueHandler" && !openingCutsceneStarted && !menu.getPaused() && !menu.getDead() && !menu.getMapOpen()))
         {
             openingCutsceneStarted = true;
 
