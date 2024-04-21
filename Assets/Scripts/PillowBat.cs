@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PillowBat : Entity
 {
-    
     private RaycastHit2D isPlayerDetected;
     
     void Start()
@@ -12,12 +11,6 @@ public class PillowBat : Entity
         base.Start();
     }
 
-    // Update is called once per frame
-    // void Update()
-    // {
-    //     base.Update();
-    // }
-    
     protected override void CollisionChecks()
     {
         base.CollisionChecks();

@@ -13,8 +13,9 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private SpriteRenderer faceSprite;
     [SerializeField] private SpriteRenderer faceBackground;
-    [SerializeField] private SpriteRenderer button;
-    [SerializeField] private SpriteRenderer key;
+    [SerializeField] private SpriteRenderer proceedPrompt;
+
+    [SerializeField] private GameObject healthInvMap;
 
     [Header("Cutscene Data")]
     [SerializeField] private string[] speakers;
@@ -50,11 +51,15 @@ public class Dialogue : MonoBehaviour
     {
         dialoguePrompt = GameObject.Find("Dialogue Prompt").GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player").GetComponent<Player>();
-
+        
         menu = GameObject.Find("Canvas").GetComponent<Menus>();
 
         //Automatically start opening cutscene when its DialogueHandler is active
-        if (gameObject.name == "OpeningDialogueHandler") dialogueActivated = true;
+        if (gameObject.name == "OpeningDialogueHandler")
+        {
+            dialogueActivated = true;
+            healthInvMap.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -87,8 +92,13 @@ public class Dialogue : MonoBehaviour
                 StartCoroutine(EndCutscene());
                 step = 0;
 
+                if(gameObject.name == "OpeningDialogueHandler")
+                {
+                    healthInvMap.SetActive(true);
+                }
+
                 //Disables specified cutscene from replaying again
-                if(gameObject.name == "OpeningDialogueHandler" ||
+                if (gameObject.name == "OpeningDialogueHandler" ||
                     gameObject.name == "DoorEndingDialogueHandler")
                 {
                     openingCutsceneComplete = true;
@@ -185,7 +195,7 @@ public class Dialogue : MonoBehaviour
         dialogueText.text = null;
 
         canContinueToNextLine = false;
-        button.enabled = false;
+        proceedPrompt.enabled = false;
 
         foreach (char letter in line.ToCharArray())
         {
@@ -202,7 +212,7 @@ public class Dialogue : MonoBehaviour
         }
 
         canContinueToNextLine = true;
-        button.enabled = true;
+        proceedPrompt.enabled = true;
     }
 
     IEnumerator StopExplosion()

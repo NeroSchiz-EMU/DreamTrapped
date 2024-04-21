@@ -12,12 +12,6 @@ public class Music : MonoBehaviour
     [SerializeField] private Dialogue openingDialogue;
     private bool levelThemeStarted;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {

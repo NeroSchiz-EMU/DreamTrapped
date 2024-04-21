@@ -10,10 +10,7 @@ public class Inventory : MonoBehaviour
     private Image gunIcon;
     private Image dashIcon;
 
-    private Image swordButton;
-    private Image bootsButton;
-    private Image gunButton;
-    private Image dashButton;
+    [SerializeField] private InputPromptSwitcher promptSwitcher;
 
     [SerializeField] private ParticleSystem swordParticles;
     [SerializeField] private ParticleSystem bootsParticles;
@@ -41,21 +38,24 @@ public class Inventory : MonoBehaviour
         gunIcon = transform.Find("Gun").GetComponent<Image>();
         dashIcon = transform.Find("Dash").GetComponent<Image>();
 
-        swordButton = transform.Find("Sword-button").GetComponent<Image>();
-        bootsButton = transform.Find("Boots-button").GetComponent<Image>();
-        gunButton = transform.Find("Gun-button").GetComponent<Image>();
-        dashButton = transform.Find("Dash-button").GetComponent<Image>();
+        /*swordKey = GameObject.Find("Sword-key");
+        bootsKey = GameObject.Find("Boots-key");
+        gunKey = GameObject.Find("Gun-key");
+        dashKey = GameObject.Find("Dash-key");
+
+        swordButton = GameObject.Find("Sword-button");
+        bootsButton = GameObject.Find("Boots-button");
+        gunButton = GameObject.Find("Gun-button");
+        dashButton = GameObject.Find("Dash-button");*/
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Optimize these later so they only run when the player obtains an ability
-
         if (player.getHasSword())
         {
             swordIcon.sprite = swordFull;
-            swordButton.enabled = true;
+            promptSwitcher.updatePrompts();
             if (!swordParticlesPlayed)
             {
                 swordParticles.Play();
@@ -65,7 +65,7 @@ public class Inventory : MonoBehaviour
         if (player.getHasBoots())
         {
             bootsIcon.sprite = bootsFull;
-            bootsButton.enabled = true;
+            promptSwitcher.updatePrompts();
             if (!bootsParticlesPlayed)
             {
                 bootsParticles.Play();
@@ -75,7 +75,7 @@ public class Inventory : MonoBehaviour
         if (player.getHasGun())
         {
             gunIcon.sprite = gunFull;
-            gunButton.enabled = true;
+            promptSwitcher.updatePrompts();
             if (!gunParticlesPlayed)
             {
                 gunParticles.Play();
@@ -85,12 +85,14 @@ public class Inventory : MonoBehaviour
         if (player.getHasDash())
         {
             dashIcon.sprite = dashFull;
-            dashButton.enabled = true;
+            promptSwitcher.updatePrompts();
             if (!dashParticlesPlayed)
             {
                 dashParticles.Play();
                 dashParticlesPlayed = true;
             }
         }
+
+
     }
 }

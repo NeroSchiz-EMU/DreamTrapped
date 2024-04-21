@@ -175,4 +175,9 @@ public class EndDoor : MonoBehaviour
         return doorOpening;
     }
 
+    public int getAbilityAmount()
+    {
+        return abilityAmount;
+    }
+
 }

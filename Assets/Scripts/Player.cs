@@ -163,7 +163,7 @@ public class Player : MonoBehaviour
             }
 
             //Melee ----------------------------------------------------------------------------
-            if (Input.GetButtonDown("Melee") && hasSword)
+            if (Input.GetButtonDown("Melee") && hasSword && !isShooting)
             {
                 if (isGrounded) isAttacking = true;
                 if (!isGrounded) isAirAttacking = true;
@@ -181,30 +181,23 @@ public class Player : MonoBehaviour
                 }
             }
 
-
-
-            /*if (Input.GetButtonUp("Melee") && hasSword)
-            {
-                if (isGrounded) isAttacking = false;
-                if (!isGrounded) isAirAttacking = false;
-            }*/
-
             //Gun ----------------------------------------------------------------------------
-            if (Input.GetButtonDown("Shoot") && hasGun)
+            if (Input.GetButtonDown("Shoot") && hasGun && !isShooting && !isAttacking && !isAirAttacking)
             {
-                if (!isGrounded == false)
-                    isShooting = true;
+                isShooting = true;
+                StartCoroutine(Shoot());
+
                 foreach (Gun gun in guns)
                 {
                     gun.Shoot();
                 }
             }
-            if (Input.GetButtonUp("Shoot") && hasGun)
+
+            /*if (Input.GetButtonUp("Shoot") && hasGun)
             {
                 if (isGrounded)
                     isShooting = false;
-            }
-            
+            }*/
 
             //Jumping (dynamic height)
             if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f)
@@ -219,8 +212,6 @@ public class Player : MonoBehaviour
             if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
             {
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-
-                
 
                 coyoteTimeCounter = 0f;
             }
@@ -295,26 +286,6 @@ public class Player : MonoBehaviour
             new Vector3(groundCheckRight.position.x, groundCheckRight.position.y - groundCheckDistanceRight));
        
     }
-
-     // private void OnTriggerEnter2D(Collider2D collision)
-     // {
-     //     if (collision.tag == "Hurts")
-     //     {
-     //         Debug.Log("Entered hurt object, starting health restoration");
-     //         StartCoroutine(TakeDamage());
-     //         IEnumerator TakeDamage()
-     //         {
-     //             Debug.Log("Initial health: " + health);
-     //             health += 5;
-     //             Debug.Log("Health after restore: " + health);
-     //             yield return new WaitForSeconds(0.5f);
-     //         }
-     //         Debug.Log("Coroutine launched");
-     //     }
-     // }
-
-     
-
 
     //****************************************************************************
     //Get functions
@@ -414,21 +385,10 @@ public class Player : MonoBehaviour
         isAttacking = false;
         isAirAttacking = false;
     }
+
+    IEnumerator Shoot()
+    {
+        yield return new WaitForSeconds(0.2f); //Duration of shoot animation
+        isShooting = false;
+    }
 }
-
-
-
-
-// try this for ground check option
-// --------------------------------
-// protected bool isGrounded;
-// public float groundCheckDistance;
-// public LayerMask whatIsGround;
-
-
-
-
-
-
-
-
