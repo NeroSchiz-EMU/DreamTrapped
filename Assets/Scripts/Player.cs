@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
@@ -16,7 +17,12 @@ public class Player : MonoBehaviour
 
     private bool inCutscene;
    
-    [SerializeField] private float moveSpeed;
+    //Controller movement script------------------------------------------------
+    [SerializeField] private float baseMoveSpeed = 5f; // Base movement speed
+    [SerializeField] private float sensitivity = 1f;   // Sensitivity control for movement speed
+    //-------------------------------------------------------------------------
+    
+    //[SerializeField] private float moveSpeed = 5;
     [SerializeField] private float jumpForce;
 
     [Header("Jump Info")]
@@ -88,7 +94,6 @@ public class Player : MonoBehaviour
         //transform.position = new Vector3(-34.641f, -5.714f, 0f);
     }
     //****************************************************************************
-
     
     void Update()
     {
@@ -97,6 +102,8 @@ public class Player : MonoBehaviour
         CollisionChecks();
         FlipController();
         AnimatorControllers();
+        
+       
 
         //Dashing
         dashTime -= Time.deltaTime;
@@ -235,20 +242,49 @@ public class Player : MonoBehaviour
 
     private void Movement()
     {
+        float horizontalInput = Gamepad.current?.leftStick.ReadValue().x ?? 0f;
+        float verticalInput = Gamepad.current?.leftStick.ReadValue().y ?? 0f;
+        float moveSpeed = baseMoveSpeed * sensitivity; // Adjusted movement speed based on sensitivity
+        
         if (isAttacking)
         {
+            // Controller
+            rb.velocity = Vector2.zero;
+            // Keyboard
             rb.velocity = new Vector2(0,0);
         }
-        
         else if (dashTime > 0)
         {
             rb.velocity = new Vector2(facingDir * dashSpeed, 0);
         }
         else if (!inCutscene)
         {
-            rb.velocity = new Vector2(xInput * moveSpeed, rb.velocity.y);
+            // Controller
+            var velocity = rb.velocity;
+            velocity = new Vector2(horizontalInput * moveSpeed, velocity.y);
+            velocity = new Vector2(verticalInput * moveSpeed, velocity.y);
+            // Keyboard
+            velocity = new Vector2(xInput * moveSpeed, velocity.y);
+            rb.velocity = velocity;
         }
     }
+    
+    // Previous Movement Method
+    //
+    //     if (isAttacking)
+    //     {
+    //         rb.velocity = new Vector2(0,0);
+    //     }
+    //     
+    //     else if (dashTime > 0)
+    //     {
+    //         rb.velocity = new Vector2(facingDir * dashSpeed, 0);
+    //     }
+    //     else if (!inCutscene)
+    //     {
+    //         rb.velocity = new Vector2(xInput * moveSpeed, rb.velocity.y);
+    //     }
+    // }
 
     private void AnimatorControllers()
     {
