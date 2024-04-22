@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Menus : MonoBehaviour
 {
-    [SerializeField] private GameObject creditsText;
+    [SerializeField] private GameObject credits;
+    [SerializeField] private GameObject buttons;
     [SerializeField] private Animator ditherTransition;
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject deathScreen;
@@ -93,18 +94,23 @@ public class Menus : MonoBehaviour
         SceneManager.LoadScene("Level");
     }
 
-    public void ToggleCredits()
+    public void OpenCredits()
     {
-        if (creditsActive == false)
-        {
-            creditsText.SetActive(true);
-            creditsActive = true;
-        }
-        else if (creditsActive == true)
-        {
-            creditsText.SetActive(false);
-            creditsActive = false;
-        }
+        credits.SetActive(true);
+        buttons.SetActive(false);
+    }
+    public void CloseCredits()
+    {
+        credits.SetActive(false);
+        buttons.SetActive(true);
+    }
+    public void TroySite()
+    {
+        Application.OpenURL("https://twitter.com/NeroSchiz");
+    }
+    public void AdrianSite()
+    {
+        Application.OpenURL("https://adriankellman.wixsite.com/portfolio");
     }
 
     public void Quit()
