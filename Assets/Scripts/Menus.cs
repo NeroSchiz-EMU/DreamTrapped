@@ -25,6 +25,15 @@ public class Menus : MonoBehaviour
 
     void Update()
     {
+        /*if((pauseMenu == null || !pauseActive) || (deathScreen == null || !deathActive) || (map == null || !deathActive))
+        {
+            Cursor.visible = false;
+        }
+        else if((pauseMenu != null && pauseActive) || (deathScreen != null && deathActive) || (map != null && mapActive))
+        {
+            Cursor.visible = true;
+        }*/
+
         if (Input.GetButtonDown("Pause"))
         {
             //PAUSE SCREEN
