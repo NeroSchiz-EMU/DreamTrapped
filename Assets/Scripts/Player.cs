@@ -18,11 +18,11 @@ public class Player : MonoBehaviour
     private bool inCutscene;
    
     //Controller movement script------------------------------------------------
-    [SerializeField] private float baseMoveSpeed = 5f; // Base movement speed
-    [SerializeField] private float sensitivity = 1f;   // Sensitivity control for movement speed
+    // [SerializeField] private float baseMoveSpeed = 5f; // Base movement speed
+    // [SerializeField] private float sensitivity = 1f;   // Sensitivity control for movement speed
     //-------------------------------------------------------------------------
     
-    //[SerializeField] private float moveSpeed = 5;
+    [SerializeField] private float moveSpeed = 5;
     [SerializeField] private float jumpForce;
 
     [Header("Jump Info")]
@@ -242,32 +242,20 @@ public class Player : MonoBehaviour
 
     private void Movement()
     {
-        float horizontalInput = Gamepad.current?.leftStick.ReadValue().x ?? 0f;
-        float verticalInput = Gamepad.current?.leftStick.ReadValue().y ?? 0f;
-        float moveSpeed = baseMoveSpeed * sensitivity; // Adjusted movement speed based on sensitivity
-        
-        if (isAttacking)
-        {
-            // Controller
-            rb.velocity = Vector2.zero;
-            // Keyboard
-            rb.velocity = new Vector2(0,0);
+            if (isAttacking)
+            {
+                rb.velocity = new Vector2(0,0);
+            }
+            
+            else if (dashTime > 0)
+            {
+                rb.velocity = new Vector2(facingDir * dashSpeed, 0);
+            }
+            else if (!inCutscene)
+            {
+                rb.velocity = new Vector2(xInput * moveSpeed, rb.velocity.y);
+            }
         }
-        else if (dashTime > 0)
-        {
-            rb.velocity = new Vector2(facingDir * dashSpeed, 0);
-        }
-        else if (!inCutscene)
-        {
-            // Controller
-            var velocity = rb.velocity;
-            velocity = new Vector2(horizontalInput * moveSpeed, velocity.y);
-            velocity = new Vector2(verticalInput * moveSpeed, velocity.y);
-            // Keyboard
-            velocity = new Vector2(xInput * moveSpeed, velocity.y);
-            rb.velocity = velocity;
-        }
-    }
     
     // Previous Movement Method
     //
